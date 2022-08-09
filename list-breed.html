@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <title>List breeds</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header background-transparent header__even">
+        <div class="grid wide">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col l-4 m-6 c-6 logo">
+                    <a href="./" class="logo__link">
+                        <img src="./assets/img/pet-care.png" height="50" />
+                        <h1>PetOfMe</h1>
+                    </a>
+                </div>
+
+                <div class="col l-5 m-6 c-6 menu">
+                    <nav class="navbar">
+                        <div class="navbar__icon menu__even">
+                            <svg width="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+                            <g>
+                                <g id="Menu">
+                                    <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+                                        C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"/>
+                                    <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+                                        S379.58,180.455,372.939,180.455z"/>
+                                    <path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+                                        c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"/>
+                                </g>
+                            </g>
+                            </svg>
+                        </div>
+                            <!-- Menu -->
+                        <ul class="list hide-on-mobile-tablet list__even">
+                            <button type="button" class="btn__close hide close-menu__even">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="#fff" class="color000 svgShape" data-name="Layer 2"><g class="color000 svgShape" data-name="close"><rect width="24" height="24" class="color000 svgShape" opacity="0" transform="rotate(180 12 12)"/><path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z" class="color000 svgShape"/></g></g></svg>
+                            </button>
+                            <li class="list__item"><a href="./" class="list__item-link">Home</a></li>
+                            <li class="list__item"><a href="./type-breeds.html" class="list__item-link active">Breeds</a></li>
+                            <li class="list__item"><a href="./about.html" class="list__item-link">About</a></li>
+                            <li class="list__item"><a href="./contact.html" class="list__item-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Form search -->
+                <div class="col l-3 m-12 c-12 form">
+                    <form action="#" class="search">
+                        <input type="text" placeholder="Search for ..." class="search__value">
+                        <button type="submit" class="search__btn">
+                            <svg width="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
+                                <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+                                c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+                                C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+                                S32.459,40,21.983,40z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header> <!-- End header  -->
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Breed -->
+        <section class="section-background section-padding border-bottom">
+            <h2 class="title title-big text-center">Dog breed</h2>
+            <p class="paragraph text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nostrum.</p>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6 m-7 c-12">
+                        <div class="breed-top__img">
+                            <img class="width-100 ob-fit-cover box-shadow" src="./assets/img/alaskan.png" />
+                            <h3 class="title title-small text-center">Alaskan Klee Kai</h3>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-5 c-12">
+                        <div class="breed-top__infor">
+                            <h3 class="title title-small">What's a dog breed?</h3>
+                            <p class="paragraph paragraph-clamp-6">The origins of this ancient breed have been the subject of conjecture for centuries. Even the breed name is a shrouded in mystery. Some experts say it derives from the Gaelic word beag (“little”), while others point to the French term for the sound hounds make while hunting: be'geule. There are reports of small pack-hounds employed to hunt rabbit and hare in England long before the Roman legions arrived in 55 B.C. An English authority called the Beagle the “foothound of our country, indigenous to the soil.” By the 1500s, most English gentlemen had packs of large hounds that tracked deer, and smaller hounds that tracked hares. The smaller, more compact hounds were ancestors of our modern Beagle. The Alaskan Klee Kai breed we see today was developed in Alaska from these well-bred husky dogs by Linda Spurlin and her family starting in the early 1970s. Using a strict breeding program to select the somewhat smaller dogs with the type/look she envisioned that also met her high standards for health, structure and temperament, she carefully developed a companion-sized version of the Alaska Husky with a very distinctive contrasting symmetrical facial mask and markings. Much like their ancestors, the Alaskan Klee Kai is adaptable to multiple lifestyles, traveling, hiking, sports, entertainment, therapy and service, and most importantly, a loving companion dog for all ages.</p>
+                            <button type="button" class="btn__animation mt-4x">
+                            Know more
+                                <i class="bx bx-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4x">
+                    <div class="col l-2 m-4 c-6 mb-2x">
+                        <div id="all" class="box-4 box-shadow location__even active">
+                            All
+                        </div>
+                    </div>
+                    <div class="col l-2 m-4 c-6 mb-2x">
+                        <div id="asia" class="box-4 box-shadow location__even">Asia</div>
+                    </div>
+                    <div class="col l-2 m-4 c-6 mb-2x">
+                        <div id="europe" class="box-4 box-shadow location__even">Europe</div>
+                    </div>
+                    <div class="col l-2 m-4 c-6 mb-2x">
+                        <div id="africa" class="box-4 box-shadow location__even">Africa</div>
+                    </div>
+                    <div class="col l-2 m-4 c-6 mb-2x">
+                        <div id="americas" class="box-4 box-shadow location__even">Americas</div>
+                    </div>
+                    <div class="col l-2 m-4 c-6 mb-2x">
+                        <div id="oceania" class="box-4 box-shadow location__even">Oceania</div>
+                    </div>
+                </div>
+
+                <div class="row mt-4x">
+                    <div class="col l-3 m-4 c-12 item mb-2x all asia">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="./breed-detail.html" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="./breed-detail.html">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all americas">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/alaskan.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all americas">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/american-foxhound.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all americas europe">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/American-English-Coonhound.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all americas oceania">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/American-Eskimo-Dog.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all oceania">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/American-Hairless-Terrier-.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all africa">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/bulldog.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all Oceania">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/shepherd.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all americas">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-4 c-12 item mb-2x all">
+                        <div class="box-5 box-shadow">
+                            <img src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                            <div class="box-5__details">
+                                <a href="#" class="title title-small title-small-clamp decoration-none primary-color">Akita</a>
+                                <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                <a class="decoration-none flex align-center primary-color read-more" href="">Read more <i class="bx bx-chevrons-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn__animation mt-2x load-more__even">
+                Load more
+                    <i class="bx bx-chevron-right"></i>
+                </button>
+
+                <h3 class="title title-big text-center letter-1 error-color not-item__even hide">Not Item</h3>
+            </div>
+        </section>
+
+        <!-- Patners -->
+        <section class="section-padding border-bottom">
+            <h2 class="title title-big text-center">Our Most Honorable Patners</h2>
+            <div class="grid wide">
+                <div class="row standard__tablet-mobile">
+                    <div class="col l-3 m-4 c-6">
+                        <img src="./assets/img/Pinterest.png" alt="" class="width-100 ob-fit-cover">
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <img src="./assets/img/Dropbox.png" alt="" class="width-100 ob-fit-cover">
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <img src="./assets/img/Amazon.png" alt="" class="width-100 ob-fit-cover">
+                    </div>
+                    <div class="col l-3 m-4 c-6">
+                        <img src="./assets/img/SpaceX.png" alt="" class="width-100 ob-fit-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> <!-- End main -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6">
+                        <div class="information">
+                            <h2 class="information__title">Let's Talk about Your Pet</h2>
+                            <ul class="information__list">
+                                <li class="information__item">
+                                    <h4 class="title title-big">Call Us At</h4>
+                                    <p class="paragraph">987-654-3210</p>
+                                </li>
+                                <li class="information__item">
+                                    <h4 class="title title-big">Email</h4>
+                                    <p class="paragraph">info@example.com</p>
+                                </li>
+                                <li class="information__item">
+                                    <h4 class="title title-big">Address</h4>
+                                    <p class="paragraph">123 Fifth Avenue, New York, NY 10160</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">Copyright &copy; 2022 HeroesPluss | Powered by HeroesPluss</div>
+    </footer><!-- End footer -->
+
+    <button type="button" class="top hide top__even">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 48 48"><rect fill="#fff" fill-opacity=".01" class="colorfff svgShape"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M13 30L25 18L37 30" class="colorStroke000 svgStroke"/></svg>
+    </button>
+
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper-bundle.min.js" type="application/javascript"></script>
+
+    <!-- Main JS -->
+    <script src="./assets/js/main.js" type="application/javascript"></script>
+
+    <script>
+        menuOnTabletMobile()
+        scrollEven()
+        testimonialScreen()
+        filterBreedLocation()
+    </script>
+</body>
+</html>
