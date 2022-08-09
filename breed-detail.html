@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <title>List breeds</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header background-transparent header__even">
+        <div class="grid wide">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col l-4 m-6 c-6 logo">
+                    <a href="./" class="logo__link">
+                        <img src="./assets/img/pet-care.png" height="50" />
+                        <h1>PetOfMe</h1>
+                    </a>
+                </div>
+
+                <div class="col l-5 m-6 c-6 menu">
+                    <nav class="navbar">
+                        <div class="navbar__icon menu__even">
+                            <svg width="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+                            <g>
+                                <g id="Menu">
+                                    <path d="M12.03,84.212h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03
+                                        C5.39,60.152,0,65.541,0,72.182C0,78.823,5.39,84.212,12.03,84.212z"/>
+                                    <path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03
+                                        S379.58,180.455,372.939,180.455z"/>
+                                    <path d="M372.939,300.758H12.03c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h360.909
+                                        c6.641,0,12.03-5.39,12.03-12.03C384.97,306.147,379.58,300.758,372.939,300.758z"/>
+                                </g>
+                            </g>
+                            </svg>
+                        </div>
+                            <!-- Menu -->
+                        <ul class="list hide-on-mobile-tablet list__even">
+                            <button type="button" class="btn__close hide close-menu__even">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><g fill="#fff" class="color000 svgShape" data-name="Layer 2"><g class="color000 svgShape" data-name="close"><rect width="24" height="24" class="color000 svgShape" opacity="0" transform="rotate(180 12 12)"/><path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z" class="color000 svgShape"/></g></g></svg>
+                            </button>
+                            <li class="list__item"><a href="./" class="list__item-link">Home</a></li>
+                            <li class="list__item"><a href="./type-breeds.html" class="list__item-link active">Breeds</a></li>
+                            <li class="list__item"><a href="./about.html" class="list__item-link">About</a></li>
+                            <li class="list__item"><a href="./contact.html" class="list__item-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Form search -->
+                <div class="col l-3 m-12 c-12 form">
+                    <form action="#" class="search">
+                        <input type="text" placeholder="Search for ..." class="search__value">
+                        <button type="submit" class="search__btn">
+                            <svg width="25" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
+                                <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+                                c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+                                C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+                                S32.459,40,21.983,40z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header> <!-- End header  -->
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Breed Information -->
+        <section class="section-padding border-bottom">
+            <div class="grid wide">
+                <div class="breed-info box-shadow">
+                    <div class="row">
+                        <div class="col l-6 m-12 c-12 flex-column row-gap-2x mt-2x mb-2x" style="display: flex;">
+                            <h2 class="title title-big white-color letter-1">Afghan Hound</h2>
+                            <div class="flex align-center mt-2x breed-info__details">
+                                <svg width="60" height="60" class="icon icon-breed-height" viewBox="0 0 79 54"><g fill="none" fill-rule="evenodd"><path stroke="#fffdfd" d="M54.9 52.627c-3.466.296-4.661-1.02-4.247-4.322.183-1.46.023-2.973-.118-4.45-.306-3.235-.751-6.459-1.028-9.695-.094-1.105-.523-1.484-1.654-1.73-3-.65-5.952-1.497-9.039-2.296-3.087-.798-2.359-1.124-3.843-.737-1.484.388-1.474 1.004-2.233 2.324-1.658 2.885-3.918 5.374-6.896 7.065-3.446 1.956-3.36 5.301-4.03 8.365-.283 1.298-.21 2.505 1.336 3.321.506.267.528 1.364.772 2.082-.6.156-1.214.487-1.797.442-3.901-.302-4.345-.958-3.959-4.807.163-1.622.029-3.28-.089-4.915-.163-2.268-.287-4.408 1.54-6.319 2.305-2.412 1.949-5.425 1.229-8.274-.615-2.429-1.66-4.76-2.591-7.348-.764.507-1.762 1.098-2.67 1.794-.898.689-1.695 1.497-2.557 2.23-2.906 2.472-6.257 2.545-9.766 1.567-.466-.13-.842-.55-1.26-.835l.137-.465c1.176 0 2.359-.076 3.527.016 2.44.19 4.398-.708 6.123-2.244 1.804-1.607 3.598-3.225 5.439-4.793 3.98-3.39 8.539-4.964 13.989-4.682 5.64.294 11.304.345 16.868-1.169 3.875-1.055 6.707-3.017 8.594-6.465 1.05-1.92 2.641-2.895 4.06-4.618.33-.4.938-.81 1.437-.833 2.902-.132 6.042-.836 8.24 1.077.234.203.59.43.592.648.024 2.907 2.862 3.227 4.584 4.563.361.28.868.425 1.151.754.21.243.334.756.209 1.028-1.821 3.911-4.163 5.034-8.734 4.347-.488-.074-1.21.111-1.543.437-2.522 2.466-3.38 5.732-4.13 8.902-.649 2.746-1.488 5.367-3.31 7.521-3.25 3.844-4.055 8.361-4.478 13.032-.09.995.06 2.015-.085 2.998-.266 1.785-.282 3.363 1.765 4.318.435.204 1.028.868 1.028 1.702s-1.842.402-2.562.464z" class="colorStrokeBABABA svgStroke" mask="url(#mask-2)"/><path stroke="#09F" d="M50 19.667h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 22.94h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M55 13H37" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 92 0)"/><path stroke="#09F" d="M48 16.273h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 26.333h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 29.607h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 33h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 36.273h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 39.667h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 42.94h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 46.333h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 49.607h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M46.137 13.365L45.922 53" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 92 0)"/></g><g fill="none" fill-rule="evenodd"><path stroke="#fffdfd" d="M54.9 52.627c-3.466.296-4.661-1.02-4.247-4.322.183-1.46.023-2.973-.118-4.45-.306-3.235-.751-6.459-1.028-9.695-.094-1.105-.523-1.484-1.654-1.73-3-.65-5.952-1.497-9.039-2.296-3.087-.798-2.359-1.124-3.843-.737-1.484.388-1.474 1.004-2.233 2.324-1.658 2.885-3.918 5.374-6.896 7.065-3.446 1.956-3.36 5.301-4.03 8.365-.283 1.298-.21 2.505 1.336 3.321.506.267.528 1.364.772 2.082-.6.156-1.214.487-1.797.442-3.901-.302-4.345-.958-3.959-4.807.163-1.622.029-3.28-.089-4.915-.163-2.268-.287-4.408 1.54-6.319 2.305-2.412 1.949-5.425 1.229-8.274-.615-2.429-1.66-4.76-2.591-7.348-.764.507-1.762 1.098-2.67 1.794-.898.689-1.695 1.497-2.557 2.23-2.906 2.472-6.257 2.545-9.766 1.567-.466-.13-.842-.55-1.26-.835l.137-.465c1.176 0 2.359-.076 3.527.016 2.44.19 4.398-.708 6.123-2.244 1.804-1.607 3.598-3.225 5.439-4.793 3.98-3.39 8.539-4.964 13.989-4.682 5.64.294 11.304.345 16.868-1.169 3.875-1.055 6.707-3.017 8.594-6.465 1.05-1.92 2.641-2.895 4.06-4.618.33-.4.938-.81 1.437-.833 2.902-.132 6.042-.836 8.24 1.077.234.203.59.43.592.648.024 2.907 2.862 3.227 4.584 4.563.361.28.868.425 1.151.754.21.243.334.756.209 1.028-1.821 3.911-4.163 5.034-8.734 4.347-.488-.074-1.21.111-1.543.437-2.522 2.466-3.38 5.732-4.13 8.902-.649 2.746-1.488 5.367-3.31 7.521-3.25 3.844-4.055 8.361-4.478 13.032-.09.995.06 2.015-.085 2.998-.266 1.785-.282 3.363 1.765 4.318.435.204 1.028.868 1.028 1.702s-1.842.402-2.562.464z" class="colorStrokeBABABA svgStroke" mask="url(#mask-2)"/><path stroke="#09F" d="M50 19.667h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 22.94h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M55 13H37" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 92 0)"/><path stroke="#09F" d="M48 16.273h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 26.333h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 29.607h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 33h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 36.273h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 39.667h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 42.94h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M50 46.333h-4" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 96 0)"/><path stroke="#09F" d="M48 49.607h-2" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 94 0)"/><path stroke="#09F" d="M46.137 13.365L45.922 53" class="colorStroke09F svgStroke" mask="url(#mask-2)" transform="matrix(-1 0 0 1 92 0)"/></g></svg>
+                                <div>
+                                    <h4>Height</h4>
+                                    <p>25 - 27 inches</p>
+                                </div>
+                            </div>
+                            <div class="flex align-center mt-2x breed-info__details">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="38" enable-background="new 0 0 315 315" viewBox="0 0 315 315"><path fill="#fff" d="M264.007,0H50.993C22.875,0,0,22.875,0,50.993v213.014C0,292.125,22.875,315,50.993,315h213.014   C292.125,315,315,292.125,315,264.007V50.993C315,22.875,292.125,0,264.007,0z M50.993,14h213.014   C284.405,14,301,30.595,301,50.993V91.83h-56.773c-24.047,0-30.855,10.063-36.862,18.94c-6.428,9.499-13.074,19.322-49.866,19.322   c-36.791,0-43.438-9.822-49.865-19.322c-6.007-8.878-12.815-18.94-36.863-18.94H14V50.993C14,30.595,30.595,14,50.993,14z    M264.007,301H50.993C30.595,301,14,284.405,14,264.007V105.83h56.77c16.617,0,20.059,5.087,25.269,12.786   c7.68,11.351,17.238,25.477,61.46,25.477c44.223,0,53.781-14.126,61.461-25.477c5.21-7.699,8.651-12.786,25.267-12.786H301v158.177   C301,284.405,284.405,301,264.007,301z" class="color000 svgShape"/><path fill="#fff" d="m127.082,97.148c1.212,2.296 3.595,3.733 6.191,3.733h17.336c0.008,0 0.016,0.002 0.023,0.002 0.009,0 0.017-0.002 0.025-0.002h31.068c2.597,0 4.98-1.438 6.191-3.733l24.226-45.915c1.418-2.689 0.939-5.986-1.187-8.16-0.68-0.697-17.107-17.073-53.455-17.073s-52.775,16.376-53.457,17.073c-2.126,2.174-2.605,5.471-1.187,8.16l24.226,45.915zm-.816-51.557l4.2,15.653c0.839,3.126 3.667,5.188 6.757,5.188 0.6,0 1.211-0.078 1.818-0.241 3.733-1.002 5.948-4.841 4.946-8.575l-4.29-15.987c3.262-0.632 6.855-1.117 10.803-1.387v15.758c0,3.866 3.134,7 7,7 3.866,0 7-3.134 7-7v-15.759c3.947,0.27 7.542,0.755 10.803,1.386l-4.29,15.988c-1.002,3.734 1.213,7.573 4.946,8.575 0.608,0.163 1.218,0.241 1.818,0.241 3.09,0 5.918-2.062 6.757-5.188l4.201-15.656c3.566,1.476 6.324,3.01 8.294,4.289l-19.524,37.005h-7.502l-5.996-15.114c-1.076-2.715-3.678-4.477-6.646-4.418-2.92,0.059-5.496,1.923-6.465,4.678l-5.223,14.854h-8.179l-19.522-37c1.976-1.282 4.733-2.817 8.294-4.29z" class="color000 svgShape"/></svg>
+                                <div>
+                                    <h4>Weight</h4>
+                                    <p>50-60 pounds</p>
+                                </div>
+                            </div>
+                            <div class="flex align-center mt-2x breed-info__details">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="40" enable-background="new 0 0 512 512" viewBox="0 0 512 512"><path fill="#fff" d="M479.912,426.193V284.714V269.51v-39.75c0-45.642-37.132-82.774-82.774-82.774h-34.33v-39.619c15.49-3.889,27.102-19.391,27.102-37.879c0-31.528-30.141-46.307-31.425-46.921l-3.28-1.568l-3.28,1.568c-1.283,0.613-31.425,15.392-31.425,46.921c0,18.489,11.612,33.99,27.103,37.879v39.619h-84.001v-39.619c15.49-3.889,27.102-19.391,27.102-37.879c0-31.528-30.14-46.307-31.425-46.921L256,20.998l-3.28,1.568c-1.283,0.613-31.425,15.392-31.425,46.921c0,18.489,11.612,33.99,27.103,37.879v39.619h-84.002v-39.619c15.49-3.889,27.102-19.391,27.102-37.879c0-31.528-30.141-46.307-31.425-46.921l-3.28-1.568l-3.28,1.568c-1.283,0.613-31.425,15.392-31.425,46.921c0,18.489,11.612,33.99,27.103,37.879v39.619h-34.33c-45.642,0-82.774,37.132-82.774,82.774v39.75v15.204v141.479H0v64.809h512v-64.809H479.912z M335.706,69.488c0-16.957,13.174-27.327,19.498-31.327c6.338,4.01,19.501,14.377,19.501,31.327c0,13.027-8.748,23.626-19.5,23.626C344.454,93.112,335.706,82.515,335.706,69.488z M236.5,69.488c0-16.958,13.176-27.328,19.499-31.327c6.338,4.01,19.501,14.377,19.501,31.327c0,13.027-8.748,23.626-19.499,23.626C245.248,93.112,236.5,82.515,236.5,69.488zM137.294,69.488c0-16.957,13.175-27.327,19.498-31.327c6.338,4.01,19.501,14.377,19.501,31.327c0,13.027-8.748,23.626-19.5,23.626C146.042,93.112,137.294,82.515,137.294,69.488z M114.863,162.19h282.274c37.258,0,67.57,30.312,67.57,67.57v39.75H47.293v-39.75h0C47.293,192.502,77.605,162.19,114.863,162.19z M496.797,475.797L496.797,475.797H15.204v-34.4h16.884h60.718v-15.205H47.293V284.714h417.414v15.208H256v15.205h208.707v15.208H355.206v15.204h109.501v80.655H113.081v15.205h366.832h16.884V475.797z" class="color000 svgShape"/></svg>
+                                <div>
+                                    <h4>Life Expectancy</h4>
+                                    <p>12-18 years</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12 mt-2x mb-2x">
+                            <div class="flex justify-right">
+                                <ul class="breed-info__photos flex">
+                                    <li class="white-color flex align-center justify-center">Video</li>
+                                    <li class="white-color flex align-center justify-center active">Photos</li>
+                                </ul>
+                            </div>
+                            <div class="mt-2x">
+                                <!-- <video class="hide" tabindex="-1" disableremoteplayback webkit-playsinline playsinline style="object-fit: fill;" src="blob:https://www.akc.org/d5f0e62b-4889-4188-81bf-11d657253db9"></video> -->
+
+                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper breed-info-swiper2__even pb-1x">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/1.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/2.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/3.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/4.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/5.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/6.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/7.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/8.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/9.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/10.png" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper breed-info__swiper-img breed-info-swiper__even">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/1.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/2.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/3.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/4.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/5.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/6.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/7.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/8.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/9.png" />
+                                        </div>
+                                        <div class="swiper-slide box-6">
+                                            <img src="./assets/img/Breed/Afghan Hound/10.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breed Traits -->
+        <section class="section-background section-padding border-bottom">
+            <div class="grid wide">
+                <h2 class="title title-big letter-1">Breed Traits & Characteristics</h2>
+                <nav class="breed-traits__nav">
+                    <ul class="flex breed-traits__list standard__tablet-mobile">
+                        <li id="trait-family" class="breed-traits-nav__even active">FAMILY LIFE</li>
+                        <li id="trait-phusical" class="flex justify-center align-center text-center breed-traits-nav__even">PHYSICAL</li>
+                        <li id="trait-social" class="flex justify-center align-center text-center breed-traits-nav__even">SOCIAL</li>
+                        <li id="trait-personality" class="flex justify-center align-center text-center breed-traits-nav__even">PERSONALITY</li>
+                        <li id="trait-all" class="flex justify-center align-center text-center breed-traits-nav__even">ALL TRAITS</li>
+                    </ul>
+                </nav>
+                <div class="row mt-4x">
+                    <div class="col l-6 m-6 c-12 mb-4x trait-all trait-family">
+                        <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                            <div class="col l-10">
+                                <h3  class="breed-traits__title primary-color">AFFECTIONATE WITH FAMILY</h3>
+                            </div>
+                            <div style="display: flex;" class="col l-2 align-center justify-right">
+                                <button class="breed-traits__show">
+                                    <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                    <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="display: flex;" class="col l-12 width-100 justify-between">
+                                <h5 class="breed-traits__label">Independent</h5>
+                                <h5 class="breed-traits__label">Lovey-Dovey</h5>
+                            </div>
+
+                            <div style="display: flex;" class="col l-12 width-100 justify-between">
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent"></div>
+                                <div class="breed-traits__percent"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="paragraph mb-none hide breed-traits__info breed-traits-info__even">How affectionate a breed is likely to be with family members, or other people he knows well. Some breeds can be aloof with everyone but their owner, while other breeds treat everyone they know like their best friend.</p>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-6 c-12 mb-4x trait-all trait-family">
+                        <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                            <div class="col l-10">
+                                <h3  class="breed-traits__title primary-color">AFFECTIONATE WITH FAMILY</h3>
+                            </div>
+                            <div style="display: flex;" class="col l-2 align-center justify-right">
+                                <button class="breed-traits__show">
+                                    <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                    <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="display: flex;" class="col l-12 width-100 justify-between">
+                                <h5 class="breed-traits__label">Independent</h5>
+                                <h5 class="breed-traits__label">Lovey-Dovey</h5>
+                            </div>
+
+                            <div style="display: flex;" class="col l-12 width-100 justify-between">
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent"></div>
+                                <div class="breed-traits__percent"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="paragraph mb-none hide breed-traits__info breed-traits-info__even">How affectionate a breed is likely to be with family members, or other people he knows well. Some breeds can be aloof with everyone but their owner, while other breeds treat everyone they know like their best friend.</p>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-6 c-12 mb-4x trait-all trait-social">
+                        <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                            <div class="col l-10">
+                                <h3  class="breed-traits__title primary-color">AFFECTIONATE WITH FAMILY</h3>
+                            </div>
+                            <div style="display: flex;" class="col l-2 align-center justify-right">
+                                <button class="breed-traits__show">
+                                    <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                    <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="display: flex;" class="col l-12 width-100 justify-between">
+                                <h5 class="breed-traits__label">Independent</h5>
+                                <h5 class="breed-traits__label">Lovey-Dovey</h5>
+                            </div>
+
+                            <div style="display: flex;" class="col l-12 width-100 justify-between">
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent overcome"></div>
+                                <div class="breed-traits__percent"></div>
+                                <div class="breed-traits__percent"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="paragraph mb-none hide breed-traits__info breed-traits-info__even">How affectionate a breed is likely to be with family members, or other people he knows well. Some breeds can be aloof with everyone but their owner, while other breeds treat everyone they know like their best friend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Breed Detail Standard -->
+        <section class="section-padding border-bottom">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-12 c-12"></div>
+                    <div class="col l-8 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-8 m-12 c-12">
+                                <h2 class="title title-big letter-1">The Breed Standard</h2>
+                                <p class="paragraph-big paragraph-big-max-height paragraph-big-clamp-6"><label class="breed-standard__label">Breed Standard:</label> A description of the ideal dog of each recognized breed, to serve as an ideal against which dogs are judged at shows, originally laid down by a parent breed club and accepted officially by national or international bodies. A description of the ideal dog of each recognized breed, to serve as an ideal against which dogs are judged at shows, originally laid down by a parent breed club and accepted officially by national or international bodies.</p>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <img src="./assets/img/Breed/Afghan Hound/standard.png" alt="" class="border width-100 ob-fit-cover">
+                            </div>
+                        </div>
+                        <h3 class="breed-standard__title mt-2x">Breed Colors & Markings</h3>
+                        <div class="row">
+                            <div class="col l-12 width-100 border-bottom pb-2x mt-2x">
+                                <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                                    <div class="col l-10">
+                                        <h3 class="breed-traits__title primary-color flex align-center column-gap-2x letter-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" enable-background="new 0 0 285.004 285.004" viewBox="0 0 285.004 285.004"><path fill="#8e43f0" d="M275.141,179.031c-0.786-0.012-1.565,0.161-2.272,0.506c-5.398,2.543-10.136,2.612-15.756-0.01c-2.483-1.209-5.476-0.176-6.685,2.307c-1.209,2.483-0.176,5.476,2.307,6.685c0.05,0.024,0.1,0.048,0.151,0.07c7.948,3.705,16.538,3.623,24.244-0.01c2.514-1.142,3.627-4.106,2.485-6.621c-0.799-1.76-2.542-2.902-4.475-2.932V179.031z M265,196.295c-10,0-20,8.403-20,21.875c0,9.167,5.215,14.787,8.965,18.537c3.676,3.676,5.914,5.601,6.002,11.168c-0.151,2.175,1.123,4.197,3.15,4.998c0.003,0,0.007,0,0.01,0c0.029,0.011,0.057,0.021,0.086,0.031c2.223,0.852,4.739,0.019,6.014-1.992c3.539-3.669,5.794-6.821,6.982-9.793c1.279-3.198,1.295-6.076,1.295-7.951s-0.016-2.746,0.58-4.236c0.596-1.49,2-3.771,5.455-7.227c0.938-0.938,1.465-2.21,1.465-3.537c0-13.472-10-21.875-20-21.875L265,196.295z M265,206.295c4.656,0,9.258,2.539,9.877,10.168c-2.936,3.207-5.011,6.081-6.082,8.758c-1.279,3.198-1.295,6.074-1.295,7.949c0,1.713-0.038,2.622-0.49,3.897c-1.788-3.104-4.063-5.52-5.975-7.432c-3.75-3.75-6.035-5.631-6.035-11.465C255,209.142,260,206.295,265,206.295L265,206.295zM264.963,31.801c-2.596,0.02-4.745,2.023-4.947,4.611l-10,130c-0.16,2.077,0.984,4.035,2.871,4.916c7.948,3.705,16.538,3.621,24.244-0.01c1.877-0.885,3.012-2.837,2.853-4.906l-10-130C269.78,33.795,267.588,31.782,264.963,31.801L264.963,31.801z M265,101.976l4.727,61.443c-3.154,0.941-6.213,0.942-9.451-0.019L265,101.976L265,101.976z M145,177.482c-13.748,0-25,11.252-25,25s11.252,25,25,25s25-11.252,25-25S158.748,177.482,145,177.482z M145,187.482c8.344,0,15,6.656,15,15s-6.656,15-15,15s-15-6.656-15-15S136.656,187.482,145,187.482z M75,167.482c-13.748,0-25,11.252-25,25s11.252,25,25,25s25-11.252,25-25S88.748,167.482,75,167.482z M75,177.482c8.343,0,15,6.656,15,15s-6.657,15-15,15s-15-6.656-15-15S66.657,177.482,75,177.482z M45,117.482c-13.748,0-25,11.252-25,25s11.252,25,25,25s25-11.252,25-25S58.748,117.482,45,117.482zM45,127.482c8.343,0,15,6.657,15,15s-6.657,15-15,15s-15-6.656-15-15S36.657,127.482,45,127.482z M85,67.482c-13.748,0-25,11.252-25,25s11.252,25,25,25s25-11.252,25-25S98.748,67.482,85,67.482z M85,77.482c8.343,0,15,6.656,15,15s-6.657,15-15,15s-15-6.656-15-15S76.657,77.482,85,77.482z M145,67.482c-13.748,0-25,11.252-25,25s11.252,25,25,25s25-11.252,25-25S158.748,67.482,145,67.482z M145,77.482c8.344,0,15,6.656,15,15s-6.656,15-15,15s-15-6.656-15-15S136.656,77.482,145,77.482zM115.787,27.521c-14.705,0-29.513,2.63-43.25,8.088C28.751,53.007-0.011,95.396,0,142.512c0.011,47.116,28.793,89.489,72.588,106.865s93.8,6.262,126.111-28.029c1.593-1.695,1.806-4.264,0.516-6.199l0.01,0.01c-24.134-36.368-16.542-61.348-6.562-84.271c4.99-11.462,10.813-22.14,13.473-33.182c2.66-11.042,1.554-22.901-7.213-33.822c-18.919-23.569-50.783-36.348-83.135-36.357L115.787,27.521z M115.684,37.709c29.628,0.148,58.905,11.832,75.44,32.43c6.978,8.693,7.492,16.077,5.289,25.221c-2.203,9.144-7.725,19.598-12.92,31.531c-10.073,23.138-17.929,52.873,5.219,90.264c-29.553,29.182-73.605,38.334-112.434,22.928C36.264,224.206,10.01,185.556,10,142.508C9.989,99.46,36.223,60.798,76.229,44.902C88.676,39.957,102.216,37.641,115.684,37.709z" class="color000 svgShape"/></svg>
+                                            COLORS
+                                        </h3>
+                                    </div>
+                                    <div style="display: flex;" class="col l-2 align-center justify-right">
+                                        <button class="breed-traits__show">
+                                            <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                            <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 width-100">
+                                        <table class="breed-standard__table width-100 mt-2x hide breed-traits__info breed-traits-info__even">
+                                            <thead>
+                                                <tr class="box-shadow">
+                                                    <th>DESCRIPTION</th>
+                                                    <th>STANDARD COLOR</th>
+                                                    <th>REGISTRATION CODE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">007</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">007</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">007</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">007</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12 width-100 border-bottom pb-2x mt-2x">
+                                <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                                    <div class="col l-10">
+                                        <h3 class="breed-traits__title primary-color flex align-center column-gap-2x letter-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" enable-background="new 0 0 470 470" viewBox="0 0 470 470"><path fill="#8e43f0" d="M339.3,0C297.479,0,258.553,20.684,235,54.708C211.448,20.684,172.522,0,130.7,0C60.759,0,3.858,56.901,3.858,126.842c0,27.856,8.865,54.296,25.638,76.461l199.523,263.722c1.417,1.874,3.631,2.975,5.981,2.975s4.563-1.101,5.981-2.975l90.712-119.899c2.499-3.303,1.847-8.007-1.456-10.506c-3.304-2.499-8.006-1.847-10.507,1.456L235,450.069L41.458,194.253c-14.785-19.539-22.6-42.849-22.6-67.411C18.858,65.172,69.03,15,130.7,15c40.539,0,77.994,22.045,97.747,57.533c1.324,2.378,3.832,3.852,6.553,3.852s5.229-1.474,6.553-3.852C261.308,37.045,298.762,15,339.3,15c61.67,0,111.842,50.172,111.842,111.842c0,24.562-7.814,47.872-22.6,67.412L337.83,314.152c-2.499,3.303-1.847,8.007,1.456,10.506c3.306,2.5,8.009,1.848,10.507-1.456l90.711-119.898c16.772-22.166,25.638-48.606,25.638-76.462C466.142,56.901,409.24,0,339.3,0z" class="color000 svgShape"/><path fill="#8e43f0" d="M202.982 330.459c12.031 0 23.466-4.674 32.019-12.823 8.553 8.149 19.987 12.823 32.019 12.823 25.594 0 46.416-20.822 46.416-46.416 0-20.426-13.221-38.126-32.204-44.191-2.114-23.649-22.041-42.248-46.23-42.248s-44.116 18.599-46.23 42.248c-18.983 6.065-32.204 23.765-32.204 44.192C156.566 309.637 177.388 330.459 202.982 330.459zM197.441 253.125c3.701-.658 6.344-3.955 6.18-7.711-.02-.463-.036-.926-.036-1.395 0-17.323 14.093-31.416 31.416-31.416 17.323 0 31.416 14.093 31.416 31.416 0 .47-.018.936-.037 1.401-.16 3.753 2.481 7.047 6.181 7.705 14.993 2.666 25.875 15.668 25.875 30.918 0 17.323-14.093 31.416-31.416 31.416-10.307 0-19.971-5.074-25.851-13.572-1.401-2.024-3.706-3.232-6.168-3.232s-4.767 1.208-6.167 3.233c-5.88 8.498-15.544 13.572-25.851 13.572-17.323 0-31.416-14.093-31.416-31.416C171.566 268.794 182.448 255.791 197.441 253.125zM212.211 162.197c3.587 2.069 8.174.837 10.243-2.753 6.015-10.437 7.332-24.386 3.611-38.272-6.531-24.371-25.944-39.626-44.198-34.74-18.253 4.891-27.437 27.813-20.907 52.185 3.721 13.886 11.836 25.309 22.263 31.339 1.183.684 2.474 1.009 3.748 1.009 2.59 0 5.109-1.343 6.499-3.747 2.074-3.585.848-8.173-2.737-10.247-6.91-3.997-12.624-12.31-15.284-22.237-4.208-15.705.509-31.19 10.3-33.813 9.792-2.626 21.619 8.428 25.827 24.133 2.66 9.928 1.869 19.983-2.118 26.899C207.389 155.542 208.622 160.128 212.211 162.197zM123.628 172.206c4.948-3.464 11.272-1.944 14.601-.729 6.589 2.406 13.121 7.717 17.922 14.574 5.896 8.419 8.591 18.139 7.21 26.001-.717 4.08 2.01 7.968 6.089 8.684 4.081.719 7.968-2.01 8.684-6.089 2.084-11.864-1.451-25.423-9.697-37.199-6.618-9.451-15.519-16.576-25.065-20.061-10.333-3.772-20.665-2.849-28.349 2.532-15.479 10.839-16.27 35.519-1.798 56.188 8.246 11.776 19.778 19.734 31.639 21.835.443.078.882.116 1.317.116 3.568 0 6.732-2.558 7.376-6.193.722-4.079-1.999-7.971-6.077-8.693-7.86-1.392-16.073-7.25-21.968-15.668C116.188 194.184 115.325 178.02 123.628 172.206zM322.519 223.171c-4.079.723-6.8 4.615-6.077 8.693.644 3.636 3.807 6.193 7.376 6.193.435 0 .874-.038 1.316-.116 11.861-2.101 23.394-10.06 31.64-21.835 6.618-9.451 10.268-20.252 10.277-30.415.011-10.999-4.391-20.392-12.075-25.773-15.479-10.84-38.941-3.14-53.414 17.528-8.246 11.777-11.78 25.335-9.696 37.199.717 4.08 4.607 6.81 8.684 6.089 4.08-.716 6.807-4.604 6.09-8.684-1.381-7.861 1.314-17.581 7.21-26.001 9.326-13.319 24.221-19.659 32.523-13.845 4.949 3.465 5.683 9.928 5.679 13.472-.006 7.014-2.764 14.969-7.564 21.825C338.591 215.921 330.379 221.779 322.519 223.171zM279.268 156.972c-3.586 2.074-4.812 6.662-2.737 10.247 1.39 2.403 3.909 3.747 6.499 3.747 1.274 0 2.565-.325 3.748-1.009 10.428-6.031 18.542-17.454 22.263-31.34 6.53-24.371-2.653-47.293-20.906-52.184-9.063-2.426-19.087.239-27.505 7.317-7.778 6.54-13.707 16.279-16.692 27.423-3.722 13.886-2.405 27.835 3.61 38.272 2.069 3.588 6.654 4.82 10.243 2.753 3.589-2.069 4.821-6.655 2.753-10.243-3.986-6.917-4.778-16.972-2.118-26.9 2.166-8.084 6.488-15.31 11.856-19.824 2.714-2.28 8.136-5.874 13.97-4.309 9.792 2.623 14.509 18.108 10.301 33.813C291.891 144.662 286.178 152.975 279.268 156.972z" class="color000 svgShape"/></svg>
+                                            MARKINGS
+                                        </h3>
+                                    </div>
+                                    <div style="display: flex;" class="col l-2 align-center justify-right">
+                                        <button class="breed-traits__show">
+                                            <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                            <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-12 width-100">
+                                        <table class="breed-standard__table width-100 mt-2x hide breed-traits__info breed-traits-info__even">
+                                            <thead>
+                                                <tr class="box-shadow">
+                                                    <th>DESCRIPTION</th>
+                                                    <th>STANDARD MARKING</th>
+                                                    <th>REGISTRATION CODE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black Mask</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">004</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black Mask</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">004</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black Mask</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">004</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black Mask</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">004</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center box-shadow">Black Mask</td>
+                                                    <td class="text-center box-shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" enable-background="new 0 0 480.358 480.358" viewBox="0 0 480.358 480.358"><path fill="#8e43f0" d="M387.702,43.753L181.316,253.467l-90.84-88.044L0,258.771l183.479,177.834l296.879-301.667L387.702,43.753zM182.98,394.343L42.421,258.108l48.719-50.265l90.676,87.886L388.042,86.178l49.892,49.1L182.98,394.343z" class="color000 svgShape"/></svg></td>
+                                                    <td class="text-center box-shadow">004</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About breed -->
+        <section class="section-padding section-background border-bottom">
+            <div class="grid wide">
+                <h2 class="title title-big">About the Breed</h2>
+                <div class="about-breed">
+                    <div class="about-breed__text-less about-breed-paragraph__even">
+                        <p class="paragraph-big">Among the most eye-catching of all dog breeds, the Afghan Hound is an aloof and dignified aristocrat of sublime beauty. Despite his regal appearance, the Afghan can exhibit an endearing streak of silliness and a profound loyalty.</p>
+
+                        <p class="paragraph-big">Since ancient times, Afghan Hounds have been famous for their elegant beauty. But the thick, silky, flowing coat that is the breed's crowning glory isn't just for show ' it served as protection from the harsh climate in mountainous regions where Afghans originally earned their keep. Beneath the Afghan's glamorous exterior is a powerful, agile hound ' standing as high as 27 inches at the shoulder ' built for a long day's hunt. Their huge paw-pads acted as shock absorbers on their homeland's punishing terrain.  The Afghan Hound is a special breed for special people. A breed expert writes, 'It's not the breed for all would-be dog owners, but where the dog and owner combination is right, no animal can equal the Afghan Hound as a pet.</p>
+
+                        <p class="paragraph-big">Since ancient times, Afghan Hounds have been famous for their elegant beauty. But the thick, silky, flowing coat that is the breed's crowning glory isn't just for show ' it served as protection from the harsh climate in mountainous regions where Afghans originally earned their keep. Beneath the Afghan's glamorous exterior is a powerful, agile hound ' standing as high as 27 inches at the shoulder ' built for a long day's hunt. Their huge paw-pads acted as shock absorbers on their homeland's punishing terrain.  The Afghan Hound is a special breed for special people. A breed expert writes, 'It's not the breed for all would-be dog owners, but where the dog and owner combination is right, no animal can equal the Afghan Hound as a pet.</p>
+                    </div>
+                    <div class="about-breed__fader about-breed-fader__even"></div>
+                </div>
+                <div class="flex justify-center mt-4x">
+                    <button class="btn__animation about-breed-more__even read-more">Read more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caring breed -->
+        <section class="section-padding border-bottom">
+            <div class="grid wide">
+                <div class="title title-big text-center letter-1">What To Expect When Caring For an Afghan Hound</div>
+                <p class="paragraph-big caring__width">Owning a dog is not just a privilege; it's a responsibility. They depend on us for, at minimum, food and shelter, and deserve much more. When you take a dog into your life, you need to understand the commitment that dog ownership entails.</p>
+                <div class="caring__width border-bottom pb-2x mt-2x">
+                    <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                        <div class="col l-10">
+                            <h3 class="breed-traits__title primary-color flex align-center column-gap-2x letter-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" enable-background="new 0 0 351.639 351.639" viewBox="0 0 351.639 351.639"><path fill="#8e43f0" d="M196.875,305.854c-7.446,6.765-15.721,13.996-21.04,15.622c-6.283-1.884-16.534-11.402-31.528-25.324c-2.546-2.364-5.25-4.874-8.128-7.528C80.463,237.239,20.686,162.049,20.006,105.12c-0.233-19.476,6.284-35.357,19.922-48.552c17.737-17.159,40.879-26.609,65.165-26.609c23.858,0,46.547,9.018,63.89,25.393c3.853,3.638,9.876,3.638,13.73,0c17.346-16.375,40.038-25.393,63.896-25.393c24.285,0,47.428,9.45,65.165,26.608c28.077,27.165,26.517,68.214-4.635,122.007c-2.768,4.779-1.137,10.897,3.643,13.665c4.778,2.769,10.897,1.138,13.665-3.642c45.277-78.185,25.662-122.77,1.234-146.404C304.191,21.407,276.11,9.959,246.607,9.959c-25.932,0-50.732,8.771-70.76,24.866c-20.025-16.096-44.823-24.866-70.755-24.866c-29.502,0-57.583,11.448-79.071,32.235C8.462,59.183-0.29,80.434,0.007,105.358c0.952,79.643,94.089,171.661,122.612,197.968c2.861,2.639,5.548,5.133,8.079,7.482c20.903,19.409,31.396,29.15,43.846,30.787c0.432,0.057,0.868,0.085,1.303,0.085c0.435,0,0.87-0.028,1.302-0.085c10.009-1.314,19.024-8.083,33.174-20.938c4.087-3.714,4.391-10.038,0.677-14.126C207.287,302.444,200.963,302.141,196.875,305.854z" class="color000 svgShape"/><path fill="#8e43f0" d="M317.536,208.583h-32.117v-32.114c0-5.522-4.477-10-10-10h-40.215c-5.523,0-10,4.478-10,10v32.114h-32.117c-5.523,0-10,4.478-10,10v40.219c0,5.522,4.477,10,10,10h32.117v32.114c0,5.522,4.477,10,10,10h40.215c5.523,0,10-4.478,10-10v-32.114h32.117c5.523,0,10-4.478,10-10v-40.219C327.536,213.06,323.059,208.583,317.536,208.583z M307.536,248.802h-32.117c-5.523,0-10,4.478-10,10v32.114h-20.215v-32.114c0-5.522-4.477-10-10-10h-32.117v-20.219h32.117c5.523,0,10-4.478,10-10v-32.114h20.215v32.114c0,5.522,4.477,10,10,10h32.117V248.802z" class="color000 svgShape"/></svg>
+                                HEALTH
+                            </h3>
+                        </div>
+                        <div style="display: flex;" class="col l-2 align-center justify-right">
+                            <button class="breed-traits__show">
+                                <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="caring__width">
+                        <div class="mb-none hide breed-traits__info breed-traits-info__even">
+                            <p class="paragraph-big">Sighthounds such as Afghans have naturally low stores of body fat, so they tend to be sensitive to anesthesia; breed experts recommend seeking out a sighthound-savvy veterinarian for surgical procedures. Like other deep-chested types of dogs, Afghan Hounds can experience bloat, a sudden and life-threatening swelling of the abdomen, and owners should educate themselves about its symptoms and what to do should bloat occur.</p>
+                            <h3 class="title title-small font-normal letter-1">Recommended Health Tests From the National Breed Club:</h3>
+                            <ul class="flex justify-between wrap caring__recommend">
+                                <li class="mt-2x">Hip Evaluation</li>
+                                <li class="mt-2x">Hip Evaluation</li>
+                                <li class="mt-2x">Hip Evaluation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="caring__width border-bottom pb-2x mt-2x">
+                    <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                        <div class="col l-10">
+                            <h3 class="breed-traits__title primary-color flex align-center column-gap-2x letter-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" enable-background="new 0 0 512.001 512.001" viewBox="0 0 512.001 512.001"><path fill="#8e43f0" d="M509.943,416.304c-2.261-9.763-4.333-19.559-6.159-29.117c-0.824-4.316-4.991-7.142-9.306-6.321c-4.316,0.824-7.145,4.991-6.321,9.307c1.865,9.759,3.979,19.759,6.286,29.72c1.095,4.726,1.649,9.663,1.649,14.676c0,16.871-6.505,32.707-16.975,41.327c-0.065,0.054-0.129,0.108-0.192,0.162c-0.067,0.051-0.134,0.103-0.199,0.155c-5.034,4.02-10.724,6.144-16.454,6.144c-5.73,0-11.421-2.124-16.455-6.144c-0.064-0.052-0.129-0.102-0.195-0.152c-0.065-0.056-0.129-0.111-0.195-0.165c-10.471-8.621-16.975-24.456-16.975-41.327c0-5.011,0.555-9.948,1.649-14.674c10.837-46.801,16.898-92.29,18.012-135.203c0.055-2.145-0.757-4.22-2.255-5.758c-1.498-1.536-3.552-2.403-5.698-2.403H333.949v-21.591h95.879c4.393,0,7.955-3.56,7.955-7.955c0-4.394-3.562-7.954-7.955-7.954h-95.879v-22.813h95.879c4.393,0,7.955-3.56,7.955-7.955c0-4.394-3.562-7.954-7.955-7.954h-95.879v-22.813h95.879c4.393,0,7.955-3.56,7.955-7.955c0-4.394-3.562-7.954-7.955-7.954h-95.879v-22.813h95.879c4.393,0,7.955-3.56,7.955-7.955c0-4.394-3.562-7.954-7.955-7.954h-95.879v-22.811h95.879c4.393,0,7.955-3.56,7.955-7.955c0-4.394-3.562-7.955-7.955-7.955h-95.879V61.334h43.978c4.393,0,7.955-3.56,7.955-7.954c0-4.394-3.562-7.955-7.955-7.955h-43.978V29.644h105.224c20.427,0,37.046,16.619,37.046,37.046v203.188c0,30.218,2.488,61.811,7.394,93.901c0.664,4.342,4.723,7.321,9.066,6.661c4.342-0.664,7.325-4.723,6.661-9.066c-4.785-31.297-7.211-62.08-7.211-91.496V66.69c0-29.199-23.755-52.955-52.955-52.955h-113.18c-4.393,0-7.955,3.561-7.955,7.954v262.796c0,4.394,3.562,7.955,7.955,7.955h105.943c-1.602,39.443-7.425,81.068-17.336,123.865c-1.367,5.902-2.06,12.046-2.06,18.264c0,21.015,7.889,40.372,21.2,52.26c0.889,1.336,2.17,2.388,3.68,2.991c7.522,5.532,16.074,8.446,24.849,8.446c8.773,0,17.326-2.913,24.848-8.446c1.51-0.602,2.792-1.655,3.681-2.991c13.31-11.888,21.2-31.246,21.2-52.26C512.002,428.351,511.309,422.207,509.943,416.304z" class="color000 svgShape"/><path fill="#8e43f0" d="M429.827 45.425h-25.844c-4.393 0-7.955 3.56-7.955 7.955 0 4.394 3.562 7.954 7.955 7.954h25.844c4.393 0 7.954-3.56 7.954-7.954C437.782 48.985 434.22 45.425 429.827 45.425zM274.087 379.241c-25.9 0-46.971 21.071-46.971 46.971.001 25.9 21.071 46.97 46.971 46.97 25.899 0 46.97-21.07 46.97-46.97S299.986 379.241 274.087 379.241zM274.087 457.272c-17.128 0-31.062-13.934-31.062-31.061.001-17.129 13.934-31.062 31.062-31.062 17.127 0 31.061 13.934 31.061 31.062C305.148 443.338 291.214 457.272 274.087 457.272z" class="color000 svgShape"/><path fill="#8e43f0" d="M350.492,423.486c-1.334-38.304-32.302-70.589-70.499-73.504c-6.734-0.511-13.48-0.145-20.075,1.093l-9.478-1.548c-12.289-2.008-23.791-7.924-32.582-16.724l-6.455-20.854L258.562,53.45c2.836-15.547-2.772-31.692-14.637-42.133c-2.025-1.782-4.812-2.418-7.411-1.684c-2.596,0.731-4.644,2.727-5.442,5.304l-55.8,180.278L119.472,14.939c-0.798-2.577-2.847-4.574-5.442-5.304c-2.596-0.733-5.386-0.098-7.411,1.684C94.754,21.76,89.145,37.904,91.981,53.451l17.419,95.485c0.789,4.322,4.932,7.185,9.254,6.398c4.322-0.788,7.186-4.931,6.398-9.253l-17.419-95.485c-0.963-5.276-0.426-10.66,1.406-15.563l58.634,189.435c0,0,0,0,0,0.001l27.956,90.323c0,0.001,0.001,0.002,0.001,0.003l7.592,24.528c0.357,1.155,0.974,2.213,1.802,3.095c11.319,12.044,26.537,20.145,42.85,22.811l10.565,1.725c1.04,0.213,2.133,0.222,3.22-0.006c5.606-1.171,11.366-1.543,17.122-1.102c29.734,2.269,54.771,28.374,55.811,58.193c0.579,16.602-5.44,32.308-16.951,44.227c-11.516,11.923-26.984,18.492-43.557,18.492c-27.513,0-51.595-18.565-58.564-45.145c-0.057-0.218-0.124-0.434-0.198-0.645l-27.621-117.543c-0.605-2.573-2.448-4.677-4.918-5.616l-4.678-1.778c-0.003-0.001-0.006-0.003-0.01-0.004l-21.015-7.985l-2.67-1.014l-24.603-134.871c-0.789-4.322-4.933-7.188-9.254-6.398c-4.322,0.788-7.186,4.931-6.398,9.253l24.982,136.941l-6.455,20.852c-8.79,8.8-20.292,14.716-32.582,16.724l-9.479,1.548c-6.587-1.236-13.363-1.605-20.076-1.094c-38.196,2.915-69.163,35.2-70.5,73.502c-0.731,20.954,6.872,40.782,21.406,55.833c14.541,15.056,34.073,23.349,55.001,23.349c34.379,0,64.52-22.962,73.672-55.975c0.143-0.359,0.261-0.733,0.351-1.12l24.793-105.503l24.793,105.503c0.09,0.385,0.209,0.759,0.351,1.119c9.152,33.014,39.292,55.977,73.671,55.977c20.927,0,40.46-8.292,55.001-23.349C343.62,464.268,351.222,444.439,350.492,423.486z M201.229,279.077l-17.63-56.961l57.907-187.082c1.833,4.902,2.368,10.285,1.406,15.562L201.229,279.077z M135.219,440.968c-0.074,0.21-0.141,0.425-0.198,0.645c-6.969,26.58-31.051,45.143-58.564,45.143c-16.572,0-32.041-6.566-43.557-18.492c-11.509-11.918-17.529-27.624-16.949-44.226c1.04-29.819,26.077-55.924,55.811-58.193c1.559-0.119,3.138-0.179,4.694-0.179c4.169,0,8.351,0.431,12.428,1.281c1.084,0.226,2.171,0.218,3.205,0.01l10.581-1.728c16.313-2.666,31.531-10.766,42.85-22.811c0.828-0.88,1.445-1.94,1.802-3.095l4.977-16.081l4.199,1.595l5.518,2.097L135.219,440.968z" class="color000 svgShape"/><path fill="#8e43f0" d="M76.456,379.241c-25.9,0-46.971,21.071-46.971,46.971c0,25.9,21.071,46.97,46.971,46.97c25.9,0,46.971-21.07,46.971-46.97S102.356,379.241,76.456,379.241z M76.456,457.272c-17.128,0-31.062-13.934-31.062-31.061c0-17.129,13.934-31.062,31.062-31.062c17.128,0,31.062,13.934,31.062,31.062C107.518,443.338,93.584,457.272,76.456,457.272z" class="color000 svgShape"/></svg>
+                                GROOMING
+                            </h3>
+                        </div>
+                        <div style="display: flex;" class="col l-2 align-center justify-right">
+                            <button class="breed-traits__show">
+                                <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="caring__width">
+                        <div class="mb-none hide breed-traits__info breed-traits-info__even">
+                            <p class="paragraph-big">Afghan puppies have short, fuzzy coats (including adorable facial hair called 'monkey whiskers') that require little maintenance. They don't stay that way for long, however. As is to be expected, the long, silky coat of an adolescent or adult Afghan requires regular grooming. Several hours per week of brushing are needed to keep the hair free of tangles and mats, as well as to remove any debris. Keeping the hair clean and mat-free is the key to keeping the Afghan's glorious coat looking its best. Regular bathing, with shampoo and conditioner, is also required. Like all breeds, Afghans should have their nails trimmed and their teeth brushed regularly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caring__width border-bottom pb-2x mt-2x">
+                    <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                        <div class="col l-10">
+                            <h3 class="breed-traits__title primary-color flex align-center column-gap-2x letter-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path fill="#8e43f0" d="M21.9760685,11.5348835c0.0010376-0.0305176-0.0025024-0.0593262-0.0042725-0.0898438   c-0.0879517-1.6073608-0.560791-3.1929932-1.4188232-4.6140137c-0.0046387-0.0115967-0.0140381-0.0209961-0.019104-0.0324097   c-0.4054565-0.6658325-0.8852539-1.2987061-1.4603882-1.8738403c-0.5743408-0.5743408-1.2063599-1.0535889-1.8712769-1.4586792   c-0.0124512-0.0055542-0.0227661-0.0158691-0.0354614-0.0209351C13.322443,1.1249104,8.2448673,1.6108112,4.930902,4.9247761   c-3.3150024,3.3150024-3.8008423,8.3917847-1.4794922,12.2363281c0.0046387,0.0115967,0.0140381,0.0209961,0.019104,0.0324097   c0.4054565,0.6658325,0.8852539,1.2987061,1.4603882,1.8738403c0.5748291,0.5748291,1.2075195,1.0544434,1.8731079,1.4598999   c0.0117798,0.005249,0.0213623,0.0148926,0.0332642,0.0196533c1.4214482,0.8582153,3.007813,1.3312378,4.61554,1.4190674   c0.0184326,0.0010376,0.0358276,0.0105591,0.0542603,0.0105591c0.0111694,0,0.0217285-0.0060425,0.0328979-0.0064087   c0.1541138,0.0070801,0.3079834,0.0220337,0.4622192,0.0220337c2.5605469,0,5.1220703-0.9755859,7.0712891-2.9248047   C21.1403751,17.0004597,22.100275,14.2472858,21.9760685,11.5348835z M11.1287174,19.9408283   c-0.7674561-0.0836182-1.5239258-0.2780151-2.2455444-0.5825806L19.3643742,8.8770466   c0.3045654,0.7216187,0.4989624,1.4780884,0.5825806,2.2455444L11.1287174,19.9408283z M6.3449645,17.6532917   c-0.2401123-0.2401123-0.4552002-0.4951782-0.6583252-0.7567139L16.9027653,5.6804523   c0.2615356,0.203125,0.5165405,0.4182739,0.7566528,0.6583862s0.4552612,0.4951172,0.6583862,0.7566528L7.1016784,18.3116169   C6.8401427,18.1084919,6.5850768,17.893404,6.3449645,17.6532917z M4.038568,11.3039265l2.2062988,2.2062988l-1.6048584,1.6048584   C4.1289611,13.9043293,3.927484,12.5939655,4.038568,11.3039265z M9.2951603,4.7030964l2.878418,2.878418l-1.500061,1.500061   L7.1996398,5.6084919c0.6143188-0.4623413,1.2781377-0.826416,1.9739385-1.088501   C9.2126408,4.5820637,9.2410831,4.6490192,9.2951603,4.7030964z M15.1213932,4.6336994l-1.5337524,1.5337524L11.445673,4.0254841   c0.1853638-0.0128174,0.3707886-0.0264893,0.5565186-0.0264893C13.0652409,3.9989948,14.1267033,4.2137165,15.1213932,4.6336994z    M5.7593932,6.9963703l3.5000615,3.4992676l-1.6005254,1.6005249L4.5791564,9.0163898   C4.8650451,8.3011799,5.2591491,7.6201496,5.7593932,6.9963703z M17.6594181,17.6532917   c-0.9909668,0.9909668-2.1801147,1.6643066-3.4406738,2.0256348l5.4663086-5.4663086   C19.3237247,15.473177,18.6503849,16.6623249,17.6594181,17.6532917z" class="color000 svgShape"/></svg>
+                                EXERCISE
+                            </h3>
+                        </div>
+                        <div style="display: flex;" class="col l-2 align-center justify-right">
+                            <button class="breed-traits__show">
+                                <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="caring__width">
+                        <div class="mb-none hide breed-traits__info breed-traits-info__even">
+                            <p class="paragraph-big">Because Afghans are sighthounds, bred to hunt and chase prey by sight, they will have a strong instinct to run off in pursuit of perceived prey; walking off leash is not advisable. Short walks do not provide enough exercise for this athletic breed, and some owners take their leashed Afghans on long runs once they reach maturity. Ideally, an Afghan should have the opportunity to run full out several times a week in a large, enclosed area. Afghans are tall, lean, and strong, which makes them excellent jumpers, so their exercise area must have a high, secure fence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caring__width border-bottom pb-2x mt-2x">
+                    <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                        <div class="col l-10">
+                            <h3 class="breed-traits__title primary-color flex align-center column-gap-2x letter-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" enable-background="new 0 0 24 24" viewBox="0 0 24 24"><path fill="#8e43f0" d="M21.5977402,16.1984863l-3.9560547-2.9667969l-0.2543945-0.2389526   c1.2088013-2.9604492,0.5703125-6.3494263-1.7319336-8.6516724c-3.1191406-3.1191406-8.1953125-3.1191406-11.3144531,0   c-3.1181638,3.1191406-3.1181638,8.1953125,0,11.3144531c1.5429688,1.5439453,3.5771484,2.3505859,5.6425786,2.3505859   c1.0185547,0,2.0415039-0.2069702,3.0198364-0.6074829l0.2282104,0.2432251l2.9667969,3.9560547   c0.1738281,0.2324219,0.4394531,0.3769531,0.7285156,0.3974609c0.0244141,0.0019531,0.0478516,0.0029297,0.0712891,0.0029297   c0.2646484,0,0.5185547-0.1044922,0.7070313-0.2929688l4-4c0.2050781-0.2050781,0.3105469-0.4882813,0.2900391-0.7783203   C21.9746933,16.6379395,21.830162,16.3723145,21.5977402,16.1984863z M11.3272934,12.6854858   c-0.0377808-0.0463257-0.0802612-0.0892334-0.116272-0.1367798c-0.055542-0.0733643-0.1077881-0.1486206-0.1589966-0.2246704   c-0.0905762-0.1343384-0.1737671-0.2728271-0.2505493-0.4147339c-0.0432129-0.079895-0.0870361-0.1594238-0.1257324-0.2414551   c-0.072876-0.1542358-0.1342163-0.3134155-0.1908569-0.4743652c-0.0261841-0.0744019-0.0571899-0.1469727-0.079834-0.2225952   c-0.071228-0.2382202-0.1287842-0.4811401-0.1637573-0.7294312c0.2489624,0.0350342,0.4927368,0.0928345,0.7318726,0.1646729   c0.0712891,0.0213623,0.1395874,0.0507202,0.2097778,0.0751953c0.1685791,0.059082,0.335144,0.1236572,0.4967651,0.2008057   c0.0728149,0.0346069,0.1433716,0.0736084,0.2144775,0.1117554c0.1565552,0.0842896,0.3091431,0.1765137,0.4571533,0.277771   c0.0637207,0.0435791,0.1273193,0.0872192,0.1891479,0.1338501c0.0500488,0.0377808,0.0953369,0.083252,0.1442261,0.1229858   C12.3952255,11.9180908,11.9170151,12.3962402,11.3272934,12.6854858z M5.7549663,14.2414551   c-2.3388669-2.3398438-2.3388669-6.1464844,0-8.4863281c1.1699219-1.1689453,2.7060552-1.7539063,4.2431645-1.7539063   c1.5361328,0,3.0732422,0.5849609,4.2431641,1.7539063c1.5341797,1.5341797,2.0976563,3.7148438,1.5683594,5.7392578   l-1.3242188-1.2529297c-1.2363281-1.2363281-2.8769531-1.9609375-4.6201172-2.0419922L9.6010361,8.1871338L8.7183456,7.3044434   C8.7140732,7.2995605,8.7124863,7.2932129,8.7080917,7.2883301C8.658287,7.248291,8.6075058,7.1984863,8.5577011,7.1682129   C8.5070419,7.1341553,8.4557114,7.111084,8.404808,7.0917969c-0.0233765-0.010498-0.0458374-0.0193481-0.0698242-0.0279541   C8.2892685,7.0446777,8.2436142,7.026001,8.1983261,7.0178223C8.1532822,7.0087891,8.1090927,7.0140381,8.0642929,7.0111694   c-0.0358276-0.0023804-0.0696416-0.0067139-0.1054692-0.005249C7.8706889,7.0097046,7.7861552,7.0278931,7.7032084,7.0557251   C7.6168437,7.0825195,7.5395732,7.1271973,7.4616313,7.1779785C7.4046855,7.2142944,7.3405375,7.2411499,7.2881694,7.2883301   C7.2409892,7.3406982,7.2141337,7.4048462,7.1778178,7.461792C7.1350932,7.5273438,7.0894389,7.5896606,7.0636821,7.661499   C7.0182719,7.7695923,6.9981303,7.8834229,6.9981303,7.998291c0,0.1298828,0.0195313,0.2597656,0.0693359,0.3798828   C7.1280131,8.498291,7.1983256,8.607666,7.2881694,8.708252c0.005127,0.005127,0.0123291,0.0066528,0.0175171,0.0116577   l0.8813481,0.8813477L8.1993027,9.864502c0.0810547,1.7441406,0.8056641,3.3847656,2.0224609,4.6015625l1.2714844,1.34375   C9.4678574,16.3391113,7.2891459,15.7746582,5.7549663,14.2414551z M14.727623,16.3146973l-0.75-0.7998047   c-0.0273438-0.0292969-0.0566406-0.0566406-0.0869141-0.0830078l-1.1784058-1.2467651   c0.5905151-0.381958,1.0917358-0.8833618,1.4735107-1.473938l0.449585,0.4254761l0.7943726,0.7522583   c0.0263672,0.03125,0.0546875,0.0605469,0.0849609,0.0888672l0.7998047,0.75   c0.0263672,0.0253906,0.0546875,0.0488281,0.0839844,0.0703125l0.791748,0.5939941l-1.7983398,1.7983398l-0.5939941-0.791748   C14.7764511,16.3693848,14.7530136,16.3410645,14.727623,16.3146973z M17.1065292,19.4758301l-0.5192871-0.6921997   c0.0383301-0.0286255,0.0831299-0.0435181,0.1179199-0.0783081l2-2c0.03479-0.03479,0.0496826-0.0795898,0.0783081-0.1179199   l0.6921997,0.5192871L17.1065292,19.4758301z" class="color000 svgShape"/></svg>
+                                TRAINING
+                            </h3>
+                        </div>
+                        <div style="display: flex;" class="col l-2 align-center justify-right">
+                            <button class="breed-traits__show">
+                                <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="caring__width">
+                        <div class="mb-none hide breed-traits__info breed-traits-info__even">
+                            <p class="paragraph-big">Afghans are independent, dignified, and aloof in general, but they are affectionate and extremely loyal to humans they have bonded with. This loyalty can make it difficult for an adult Afghan to adjust to a new home. On the other hand, it can make them fairly easy to housetrain, because they want to please their owners. Unless obedience or agility competition is a goal, teaching basic commands such as come, sit, and stay is generally sufficient. Afghan Hound owners are often quick to point out that no amount of training will overcome the breed's hunting instinct to break off on a high-speed chase.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caring__width border-bottom pb-2x mt-2x">
+                    <div class="row justify-between align-center standard__tablet-mobile breed-traits-show__even cursor-pointer">
+                        <div class="col l-10">
+                            <h3 class="breed-traits__title primary-color flex align-center column-gap-2x letter-1">
+                                <svg width="40" height="40" viewBox="0 0 56 56"><g fill="#8e43f0" fill-rule="evenodd" class="color000 svgShape"><path d="M28 40.618c1.51-.122 3.024-.21 4.53-.375 1.71-.186 3.373-.582 4.9-1.407 1.36-.734 2.357-1.765 2.707-3.312.285-1.257.63-2.503.856-3.77.494-2.76.935-5.53 1.384-8.298.092-.57-.038-1.138-.492-1.504-.663-.533-1.348-1.075-2.107-1.448-1.872-.918-3.91-1.342-5.961-1.634-2.897-.413-5.811-.542-8.738-.308-2.526.202-5.024.546-7.432 1.357-1.252.422-2.473.923-3.433 1.876-.41.407-.672.892-.604 1.474.146 1.265.267 2.536.504 3.786.512 2.707 1.083 5.403 1.644 8.1.242 1.166.744 2.189 1.709 2.962 1.117.895 2.42 1.389 3.784 1.732 2.21.555 4.474.672 6.748.77m.148-23.514c2.773-.026 5.648.233 8.476.856 2.005.442 3.956 1.047 5.694 2.205 1.397.932 1.857 2.157 1.558 3.78-.493 2.67-.876 5.36-1.368 8.031a50.72 50.72 0 01-1.021 4.367c-.606 2.185-2.244 3.408-4.266 4.206-2.243.885-4.606 1.216-6.997 1.265-2.049.043-4.107.022-6.15-.124-2.386-.17-4.716-.643-6.819-1.887-1.623-.96-2.574-2.36-2.952-4.173-.4-1.918-.872-3.823-1.216-5.75a133.008 133.008 0 01-1.07-7.035c-.137-1.117.604-1.9 1.442-2.541 1.303-.996 2.822-1.552 4.387-1.978 3.488-.948 6.817-1.233 10.302-1.222" class="color000 svgShape"/><path d="M28.123 20.071c3.128.056 6.372.264 9.487 1.315a9.793 9.793 0 012.354 1.158c1.183.805 1.158 1.82.016 2.694-.986.755-2.15 1.139-3.335 1.452-3.153.834-6.377 1.058-9.624.984-2.808-.064-5.6-.319-8.293-1.173-.818-.26-1.59-.666-2.375-1.022-.179-.08-.333-.223-.485-.352-.955-.811-.952-1.726.03-2.51 1.086-.868 2.391-1.27 3.713-1.609 2.747-.701 5.554-.902 8.512-.937" class="color000 svgShape"/><path fill-rule="nonzero" d="M33.84 30.706c-.57-.143-1.11.094-1.389.624-.321.61-.79.939-1.475.992-2.315.18-4.092.189-5.842-.03-.793-.1-1.31-.404-1.69-1.093-.333-.603-1.095-.777-1.728-.385-.548.339-.634.841-.193 1.502.387.578.344 1.09-.013 1.676-.178.293-.275.565-.267.713.03.532.358.863.996.976.484.086.992-.178 1.3-.705.255-.435.644-.802 1.125-.88 1.875-.305 3.831-.314 6.09-.082.767.078 1.294.411 1.662 1.099.312.582 1.108.766 1.731.387.506-.307.687-1.112.322-1.449-.59-.545-.602-1.353.123-1.835.03-.02.074-.081.115-.185.052-.131.08-.274.09-.372-.084-.499-.403-.813-.958-.953zm1.195 2.176c-.276.184-.242.38-.023.582.863.796.38 2.216-.45 2.72-.983.597-2.305.326-2.851-.693-.249-.465-.551-.632-1.039-.681-1.964-.202-3.926-.242-5.88.076-.212.034-.44.286-.562.494-.465.794-1.291 1.237-2.13 1.089-.959-.17-1.603-.772-1.656-1.72-.021-.387.172-.826.383-1.173.187-.307.24-.502.031-.816-.688-1.03-.505-2.044.437-2.626.996-.617 2.28-.351 2.849.678.265.48.583.622 1.09.686 1.895.237 3.785.174 5.68.026.412-.032.638-.204.83-.567a1.99 1.99 0 012.29-1.026c.85.213 1.455.783 1.568 1.698 0 0-.033.898-.567 1.253z" class="color000 svgShape"/><path fill-rule="nonzero" d="M28 55.5C12.812 55.5.5 43.188.5 28S12.812.5 28 .5 55.5 12.812 55.5 28 43.188 55.5 28 55.5zm0-3c13.531 0 24.5-10.969 24.5-24.5S41.531 3.5 28 3.5 3.5 14.469 3.5 28 14.469 52.5 28 52.5z" class="color000 svgShape"/></g></svg>
+                                NUTRITION
+                            </h3>
+                        </div>
+                        <div style="display: flex;" class="col l-2 align-center justify-right">
+                            <button class="breed-traits__show">
+                                <i class="bx bx-plus icon-plus__even primary-color"></i>
+                                <i class="bx bx-minus icon-minus__even hide primary-color"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="caring__width">
+                        <div class="mb-none hide breed-traits__info breed-traits-info__even">
+                            <p class="paragraph-big">The Afghan Hound should do well on a high-quality dog food, whether commercially manufactured or home-prepared with your veterinarian's supervision and approval. Any diet should be appropriate to the dog's age (puppy, adult, or senior). As sight hounds, Afghan Hounds have naturally svelte physiques, and their protruding hipbones are a unique breed characteristic, not a sign of being underweight. That said, Afghan Hounds are athletic, active dogs, so be mindful that your dog is getting enough good nutrition to meet his needs. Learn about which human foods are safe for dogs, and which are not. Check with your vet if you have any concerns about your dog's weight or diet. Clean, fresh water should be available at all times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History breed -->
+        <section class="section-padding section-background border-bottom">
+            <div class="grid wide">
+                <h2 class="title title-big letter-1">History</h2>
+                <div class="row">
+                    <div class="col l-7 m-12 c-12">
+                        <div class="about-breed">
+                            <div class="about-breed__text-less about-breed-paragraph__even">
+                                <p class="paragraph-big">Among the most eye-catching of all dog breeds, the Afghan Hound is an aloof and dignified aristocrat of sublime beauty. Despite his regal appearance, the Afghan can exhibit an endearing streak of silliness and a profound loyalty.</p>
+
+                                <p class="paragraph-big">Since ancient times, Afghan Hounds have been famous for their elegant beauty. But the thick, silky, flowing coat that is the breed's crowning glory isn't just for show ' it served as protection from the harsh climate in mountainous regions where Afghans originally earned their keep. Beneath the Afghan's glamorous exterior is a powerful, agile hound ' standing as high as 27 inches at the shoulder ' built for a long day's hunt. Their huge paw-pads acted as shock absorbers on their homeland's punishing terrain.  The Afghan Hound is a special breed for special people. A breed expert writes, 'It's not the breed for all would-be dog owners, but where the dog and owner combination is right, no animal can equal the Afghan Hound as a pet.</p>
+
+                                <p class="paragraph-big">Since ancient times, Afghan Hounds have been famous for their elegant beauty. But the thick, silky, flowing coat that is the breed's crowning glory isn't just for show ' it served as protection from the harsh climate in mountainous regions where Afghans originally earned their keep. Beneath the Afghan's glamorous exterior is a powerful, agile hound ' standing as high as 27 inches at the shoulder ' built for a long day's hunt. Their huge paw-pads acted as shock absorbers on their homeland's punishing terrain.  The Afghan Hound is a special breed for special people. A breed expert writes, 'It's not the breed for all would-be dog owners, but where the dog and owner combination is right, no animal can equal the Afghan Hound as a pet.</p>
+
+                                <p class="paragraph-big">Since ancient times, Afghan Hounds have been famous for their elegant beauty. But the thick, silky, flowing coat that is the breed's crowning glory isn't just for show ' it served as protection from the harsh climate in mountainous regions where Afghans originally earned their keep. Beneath the Afghan's glamorous exterior is a powerful, agile hound ' standing as high as 27 inches at the shoulder ' built for a long day's hunt. Their huge paw-pads acted as shock absorbers on their homeland's punishing terrain.  The Afghan Hound is a special breed for special people. A breed expert writes, 'It's not the breed for all would-be dog owners, but where the dog and owner combination is right, no animal can equal the Afghan Hound as a pet.</p>
+
+                                <p class="paragraph-big">Since ancient times, Afghan Hounds have been famous for their elegant beauty. But the thick, silky, flowing coat that is the breed's crowning glory isn't just for show ' it served as protection from the harsh climate in mountainous regions where Afghans originally earned their keep. Beneath the Afghan's glamorous exterior is a powerful, agile hound ' standing as high as 27 inches at the shoulder ' built for a long day's hunt. Their huge paw-pads acted as shock absorbers on their homeland's punishing terrain.  The Afghan Hound is a special breed for special people. A breed expert writes, 'It's not the breed for all would-be dog owners, but where the dog and owner combination is right, no animal can equal the Afghan Hound as a pet.</p>
+                            </div>
+                            <div class="about-breed__fader about-breed-fader__even"></div>
+                        </div>
+                        <div class="flex justify-center mt-4x">
+                            <button class="btn__animation about-breed-more__even read-more">Read more</button>
+                        </div>
+                    </div>
+                    <div class="col l-5 m-12 c-12">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper history-swiper__even mt-2x pb-2x">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/1.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/2.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/3.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/4.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/5.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/6.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/7.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/8.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/9.png" />
+                                </div>
+                                <div class="swiper-slide box-6">
+                                    <img src="./assets/img/Breed/Afghan Hound/10.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other breed -->
+        <section class="section-padding border-bottom">
+            <div class="grid wide">
+                <div class="h2 title title-big text-center letter-1">Explore Other Breeds</div>
+                <div class="row">
+                    <a href="./breed-detail.html" class="col l-4 m-6 c-12 decoration-none primary-color mt-2x box-7">
+                        <div class="box-shadow border">
+                            <div class="row align-center">
+                                <div class="col l-6 m-7 c-12">
+                                    <img class="width-100" src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                                </div>
+                                <div class="col l-6 m-5 c-12 box-7__wrapper">
+                                    <h3 class="title title-small title-small-clamp">Akita</h3>
+                                    <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./breed-detail.html" class="col l-4 m-6 c-12 decoration-none primary-color mt-2x box-7">
+                        <div class="box-shadow border">
+                            <div class="row align-center">
+                                <div class="col l-6 m-7 c-12">
+                                    <img class="width-100" src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                                </div>
+                                <div class="col l-6 m-5 c-12 box-7__wrapper">
+                                    <h3 class="title title-small title-small-clamp">Akita</h3>
+                                    <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./breed-detail.html" class="col l-4 m-6 c-12 decoration-none primary-color mt-2x box-7">
+                        <div class="box-shadow border">
+                            <div class="row align-center">
+                                <div class="col l-6 m-7 c-12">
+                                    <img class="width-100" src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                                </div>
+                                <div class="col l-6 m-5 c-12 box-7__wrapper">
+                                    <h3 class="title title-small title-small-clamp">Akita</h3>
+                                    <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./breed-detail.html" class="col l-4 m-6 c-12 decoration-none primary-color mt-2x box-7">
+                        <div class="box-shadow border">
+                            <div class="row align-center">
+                                <div class="col l-6 m-7 c-12">
+                                    <img class="width-100" src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                                </div>
+                                <div class="col l-6 m-5 c-12 box-7__wrapper">
+                                    <h3 class="title title-small title-small-clamp">Akita</h3>
+                                    <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./breed-detail.html" class="col l-4 m-6 c-12 decoration-none primary-color mt-2x box-7">
+                        <div class="box-shadow border">
+                            <div class="row align-center">
+                                <div class="col l-6 m-7 c-12">
+                                    <img class="width-100" src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                                </div>
+                                <div class="col l-6 m-5 c-12 box-7__wrapper">
+                                    <h3 class="title title-small title-small-clamp">Akita</h3>
+                                    <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./breed-detail.html" class="col l-4 m-6 c-12 decoration-none primary-color mt-2x box-7">
+                        <div class="box-shadow border">
+                            <div class="row align-center">
+                                <div class="col l-6 m-7 c-12">
+                                    <img class="width-100" src="./assets/img/akita.png" alt="" class="box-shadow width-100 ob-fit-cover">
+                                </div>
+                                <div class="col l-6 m-5 c-12 box-7__wrapper">
+                                    <h3 class="title title-small title-small-clamp">Akita</h3>
+                                    <p class="paragraph paragraph-clamp">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main> <!-- End main -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="main-footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6">
+                        <div class="information">
+                            <h2 class="information__title">Let's Talk about Your Pet</h2>
+                            <ul class="information__list">
+                                <li class="information__item">
+                                    <h4 class="title title-big">Call Us At</h4>
+                                    <p class="paragraph">987-654-3210</p>
+                                </li>
+                                <li class="information__item">
+                                    <h4 class="title title-big">Email</h4>
+                                    <p class="paragraph">info@example.com</p>
+                                </li>
+                                <li class="information__item">
+                                    <h4 class="title title-big">Address</h4>
+                                    <p class="paragraph">123 Fifth Avenue, New York, NY 10160</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">Copyright &copy; 2022 HeroesPluss | Powered by HeroesPluss</div>
+    </footer><!-- End footer -->
+
+    <button type="button" class="top hide top__even">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 48 48"><rect fill="#fff" fill-opacity=".01" class="colorfff svgShape"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M13 30L25 18L37 30" class="colorStroke000 svgStroke"/></svg>
+    </button>
+
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper-bundle.min.js" type="application/javascript"></script>
+
+    <!-- Main JS -->
+    <script src="./assets/js/main.js" type="application/javascript"></script>
+
+    <script>
+        menuOnTabletMobile()
+        scrollEven()
+        testimonialScreen()
+        swiperImageBreed()
+        breedTraitsShow()
+        loadTrait()
+        filterBreedTraits()
+        aboutBreedRead()
+    </script>
+</body>
+</html>

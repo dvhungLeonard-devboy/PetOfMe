@@ -1,0 +1,1056 @@
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo__link {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    user-select: none;
+    text-decoration: none;
+}
+
+.logo__link h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    margin-left: 12px;
+    color: var(--primary-color);
+}
+
+.navbar {
+    height: var(--header-height);
+    user-select: none;
+}
+
+.navbar__icon {
+    display: none;
+}
+
+.list {
+    display: flex;
+    height: 100%;
+    padding: 5px;
+}
+
+.list__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.list__item-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--menu-color);
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+
+.list__item-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--primary-color);
+    /* transition: all 0.7s cubic-bezier(0.43, 0.23, 0.29, 1.21); */
+    transition: 0.3s;
+}
+
+.list__item-link:hover, .list__item-link.active {
+    color: var(--primary-color);
+}
+
+.list__item-link.active::after {
+    width: 100%;
+}
+
+.list__item-link:hover::after {
+    width: 100%;
+}
+
+.search {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search__value {
+    height: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    flex: 1;
+    padding: 0 44px 0 12px;
+    outline: none;
+}
+
+.search__btn {
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    height: 40px;
+    margin-left: 8px;
+    background: none;
+    position: absolute;
+    right: 0;
+}
+
+/* Main */
+.main {
+    margin-top: 60px;
+}
+
+.banner {
+    height: 800px;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.banner__slogan {
+    padding: 60px 0;
+}
+
+.banner__slogan-wrap {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    max-width: 500px;
+    padding: 0 4px;
+}
+
+.banner__slogan-wrap h2 {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 4.6rem;
+    line-height: 5rem;
+}
+
+/* Standard css */
+.standard {
+    padding: 80px 0;
+}
+
+.div-center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Background breeds css */
+.background__breeds img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Breeds css */
+.breeds {
+    padding: 80px 0;
+    position: relative;
+}
+
+.breeds__paragraph {
+    font-size: 1.4rem;
+}
+
+.breeds__wrap {
+    padding: 20px 0;
+}
+
+.breeds_img img {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+.background__food {
+    width: 200px;
+    height: 200px;
+    background: url(../img/food__breeds.png);
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    z-index: -1;
+}
+
+.breeds__list {
+    padding: 20px 0;
+    background: #E6EBEB;
+}
+
+.breeds__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+.breeds__box img {
+    width: 90%;
+    border: 1px solid var(--border-color);
+}
+
+.breeds__box p {
+    padding: 0 20px;
+    font-size: 1.3rem;
+    --growth-from: 0.8;
+    --growth-to: 1;
+    animation: growth linear 0.3s;
+}
+
+/* Testimonials css */
+.testimonials {
+    background: url(../img/background__breeds-4.png);
+    background-size: cover;
+    position: relative;
+}
+
+.testimonials__wrapper {
+    padding: 60px 0;
+    background: var(--primary-color-6);
+}
+
+.testimonials__title {
+    color: var(--white-color);
+    letter-spacing: 2px;
+}
+
+.box-1 {
+    user-select: none;
+    padding: 20px 0;
+}
+
+.testimonials__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials__paragraph {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    padding: 0 8px;
+}
+
+.testimonials__information-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonials__information-name {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/* About */
+.about__img img {
+    width: 60%;
+}
+
+.about__paragraph {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.btn__animation {
+    padding: 1px 20px;
+    font-size: 1.7rem;
+    min-height: 40px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+    column-gap: 6px;
+}
+
+.btn__animation:hover {
+    color: var(--white-color);
+}
+
+.btn__animation::before {
+   content: "";
+   height: 100%;
+   width: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: var(--primary-color);
+   z-index: -1;
+   transition: width 0.25s linear;
+}
+
+.btn__animation:hover::before {
+    width: 100%;
+}
+
+/* Social */
+.social {
+    padding: 20px 0;
+}
+
+.social-share-item {
+   width: 100%;
+   padding: 10px;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.social-share-item.facebook {
+   background-color: #3b5999;
+}
+
+.social-share-item.instagram {
+   background-color: #e4405f;
+}
+
+.social-share-item.twitter {
+   background-color: #55acee;
+}
+
+.social-share-item.tiktok {
+   background-color: #111111;
+}
+
+.social-share-icon {
+   width: 40px;
+   height: 40px;
+   background-color: white;
+   border-radius: inherit;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 18px;
+}
+
+.social-share-text {
+   color: white;
+   margin-left: 20px;
+   font-size: 16px;
+}
+
+/* Contact css */
+.contact__img img {
+    width: 100%;
+}
+
+.btn-see {
+    font-size: 1.5rem;
+    border: 1px solid var(--border-color);
+    outline: none;
+    background: transparent;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.see-box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-box svg {
+    margin-left: 12px;
+}
+
+/* Footer */
+.main-footer {
+    height: 900px;
+    background: url(../img/background__breeds-9.png);
+    background-size: cover;
+    position: relative;
+}
+
+.information{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.information__title {
+    font-size: 8rem;
+    line-height: 10rem;
+    max-width: 70%;
+}
+
+.footer-copyright {
+    padding: 30px 0;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+/* Type breed */
+.type-breed__link {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.type-breed__img {
+    border-width: 12px 0 0 0;
+    border-style: solid;
+}
+
+.box-3 {
+    margin: 2px 0;
+}
+
+.box-3:nth-child(odd) .box-3__img {
+    order: 1;
+}
+
+.box-3:nth-child(even) .box-3__img {
+    order: 2;
+}
+
+.box-3:nth-child(odd) .box-3__info {
+    order: 2;
+}
+
+.box-3:nth-child(even) .box-3__info {
+    order: 1;
+}
+
+.box-3:nth-child(1n) .type-breed__img  {
+    border-color: var(--box-1-color);
+}
+
+.box-3:nth-child(2n) .type-breed__img  {
+    border-color: var(--box-2-color);
+}
+
+.box-3:nth-child(3n) .type-breed__img  {
+    border-color: var(--box-3-color);
+}
+
+.box-3:nth-child(4n) .type-breed__img  {
+    border-color: var(--box-4-color);
+}
+
+/* Type breed testimonials css */
+.type-breed__testimonial {
+    user-select: none;
+    padding: 20px 0;
+}
+
+.tybe-breed__testimonial-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+}
+
+.tybe-breed__testimonial-slide img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.tybe-breed__testimonial-slide i {
+    font-size: 24px;
+}
+
+.tybe-breed__testimonial-slide:nth-child(1n) i {
+    color: var(--box-1-color);
+}
+
+.tybe-breed__testimonial-slide:nth-child(2n) i {
+    color: var(--box-2-color);
+}
+
+.tybe-breed__testimonial-slide:nth-child(3n) i {
+    color: var(--box-3-color);
+}
+
+.tybe-breed__testimonial-slide:nth-child(4n) i {
+    color: var(--box-4-color);
+}
+
+.swiper-pagination-bullet {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active:nth-child(1n) {
+    background: var(--box-1-color);
+}
+
+.swiper-pagination-bullet-active:nth-child(2n) {
+    background: var(--box-2-color);
+}
+
+.swiper-pagination-bullet-active:nth-child(3n) {
+    background: var(--box-3-color);
+}
+
+.swiper-pagination-bullet-active:nth-child(4n) {
+    background: var(--box-4-color);
+}
+
+/* List breed */
+.breed-top__img {
+    border-width: 6px 0 0 0;
+    border-style: solid;
+    border-color: var(--box-4-color);
+}
+
+.box-4 {
+    background: var(--background-color);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-4:hover {
+    background: var(--primary-color-6);
+    color: var(--white-color);
+    transform: scale(1.1);
+}
+
+.box-4.active {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.item {
+    transition: 0.5s;
+}
+
+.box-5 {
+    border-width: 0 0 2px 0;
+    border-style: solid;
+}
+
+.item:nth-child(1n) .box-5 {
+    border-color: var(--box-1-color);
+}
+
+.item:nth-child(2n) .box-5 {
+    border-color: var(--box-2-color);
+}
+
+.item:nth-child(3n) .box-5 {
+    border-color: var(--box-3-color);
+}
+
+.item:nth-child(4n) .box-5 {
+    border-color: var(--box-4-color);
+}
+
+.box-5__details {
+    padding: 0 8px 16px 8px;
+}
+
+.box-5__details .read-more {
+    font-size: 1.3rem;
+    column-gap: 6px;
+}
+
+/* Breed information css */
+.breed-info {
+    padding: 12px;
+    background: linear-gradient(180deg, var(--secondary-color), var(--primary-color));
+}
+
+.breed-info__details {
+    column-gap: 8px;
+    color: var(--white-color);
+}
+
+.breed-info__details h4 {
+    font-size: 1.6rem;
+}
+
+.breed-info__details p {
+    font-size: 1.2rem;
+    margin: 8px 0 0 0;
+}
+
+.breed-info__photos {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+}
+
+.breed-info__photos li {
+    font-size: 1.4rem;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.breed-info__photos li.active {
+    background-color: var(--primary-color-6);
+}
+
+.breed-info__photos li:first-child {
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: var(--border-color);
+    border-radius: 20px 0 0 20px;
+}
+
+.breed-info__photos li:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.box-6 {
+    background-size: cover;
+    background-position: center;
+}
+
+.box-6 img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.breed-info__swiper-img .box-6 {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.breed-info__swiper-img .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+/* Breed traits css */
+.breed-traits__nav {
+    position: relative;
+}
+
+.breed-traits__nav::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid var(--black-color);
+}
+
+.breed-traits__list li {
+    padding: 12px 28px;
+    font-size: 1.4rem;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+    margin: 0 8px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.breed-traits__list li.active {
+    border-top: 1px solid var(--black-color);
+    border-left: 1px solid var(--black-color);
+    border-right: 1px solid var(--black-color);
+    border-bottom: 1px solid var(--white-color);
+}
+
+.breed-traits__title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: normal;
+}
+
+.breed-traits__show {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 2.2rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.breed-traits__label {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: var(--gray-color);
+    margin: 8px 0;
+}
+
+.breed-traits__percent {
+    height: 10px;
+    width: 19%;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.breed-traits__percent.overcome {
+    background-color: var(--primary-color);
+}
+
+.breed-traits__info {
+    animation: fadeIn linear 0.2s;
+}
+
+/* Breed detail standard css */
+.breed-standard_paragraph {
+    color: var(--text-color);
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    max-height: 16.8rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+}
+
+.breed-standard__label {
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+    text-decoration: underline;
+}
+
+.breed-standard__title {
+    color: var(--text-color);
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+}
+
+.breed-standard__table th {
+    font-size: 1.3rem;
+    padding: 10px 0;
+}
+
+.breed-standard__table td {
+    font-size: 1.4rem;
+    padding: 10px 0;
+    color: var(--text-color);
+}
+
+.breed-standard__table > tbody > tr:nth-child(odd) {
+    background-color: var(--primary-color-6);
+}
+
+.about-breed {
+    position: relative;
+}
+
+.about-breed__text-less {
+    max-height: 345px;
+    overflow: hidden;
+}
+
+.about-breed__fader {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(rgba(255,255,255,0),#f8f8f8);
+    animation: fadeIn linear 0.2s;
+}
+
+/* Caring css */
+.caring__width {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caring__recommend {
+    padding-left: 20px;
+}
+
+.caring__recommend li {
+    width: 45%;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    list-style: circle;
+}
+
+/* History css */
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+}
+
+/* Other breed css */
+.box-7 img {
+    border-width: 0 0 0 3px;
+    border-style: solid;
+}
+
+.box-7:nth-child(1n) img  {
+    border-color: var(--box-1-color);
+}
+
+.box-7:nth-child(2n) img  {
+    border-color: var(--box-2-color);
+}
+
+.box-7:nth-child(3n) img  {
+    border-color: var(--box-3-color);
+}
+
+.box-7:nth-child(4n) img  {
+    border-color: var(--box-4-color);
+}
+
+/* About css */
+.about-background {
+    background: url(../img/about__background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.square {
+    position: relative;
+}
+
+.square::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    background-color: inherit;
+    z-index: 2;
+}
+
+.about__personal img {
+    height: 400px;
+}
+
+.about__personal:nth-child(even) img {
+    border-radius: 30px 0 30px 30px;
+}
+
+.about__personal:nth-child(even) .about__first-order {
+    order: 1;
+}
+
+.about__personal:nth-child(even) .about__last-order {
+    order: 2;
+}
+
+.about__personal:nth-child(odd) img {
+    border-radius: 0 30px 30px 30px;
+}
+
+.about__personal:nth-child(odd) .about__first-order {
+    order: 2;
+}
+
+.about__personal:nth-child(odd) .about__last-order {
+    order: 1;
+}
+
+/* Contact css */
+.contact-header {
+    position: relative;
+}
+
+.contact-header::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    top: 0;
+    right: 0;
+    background: url(../img/contact__header.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 35% 0 0 50%;
+}
+
+.contact-header__wrapper {
+    position: relative;
+}
+
+.contact-header__content {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.contact-header__phone {
+    display: block;
+    font-size: 1.7rem;
+    height: 40px;
+    padding: 1px 12px
+}
+
+.text-field {
+   position: relative;
+}
+
+.text-field label {
+   display: inline-block;
+   font-weight: 600;
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   left: 10px;
+   background-color: var(--white-color);
+   padding: 1px 5px;
+   font-size: 1.2rem;
+   transform: translateY(-50%);
+   color: var(--primary-color);
+}
+
+.text-field input, .text-field textarea {
+   padding: 15px;
+   display: block;
+   width: 100%;
+   font-size: 1.4rem;
+   border: 1px solid var(--primary-color);
+   border-radius: 4px;
+   background-color: transparent;
+   color: var(--text-color);
+}
+
+.contact-use {
+    column-gap: 8px;
+}
+
+.contact-checkbox {
+    display: block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contact-checkbox input {
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 36% / 36%;
+    box-shadow: inset 0 0 0 1.5px var(--border, var(--border-color));
+    background: var(--background, transparent);
+    transition: background .25s linear, box-shadow .25s linear;
+}
+
+.contact-checkbox svg {
+    display: block;
+    position: absolute;
+}
+
+.contact-checkbox input + svg {
+    width: 21px;
+    height: 18px;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+}
+
+.contact-checkbox input + svg .tick {
+    stroke-dasharray: 20;
+    stroke-dashoffset: var(--stroke-dashoffset, 20);
+    transition: stroke-dashoffset .2s;
+}
+
+.contact-checkbox input + svg .tick.mask {
+    stroke: var(--white-color);
+}
+
+.contact-checkbox input + svg + svg {
+    width: 11px;
+    height: 11px;
+    fill: none;
+    stroke: var(--primary-color);
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    top: -6px;
+    right: -10px;
+    stroke-dasharray: 4.5px;
+    stroke-dashoffset: 13.5px;
+    pointer-events: none;
+    animation: var(--animation, none) .2s ease .175s;
+}
+
+.contact-checkbox input:checked {
+    --background: var(--primary-color);
+    --border: var(--primary-color);
+}
+
+.contact-checkbox input:checked + svg {
+    --stroke-dashoffset: 0;
+}
+
+.contact-checkbox input:checked + svg + svg {
+    --animation: check;
+}
+
+/* 404 css */
+.p404 {
+    height: 90vh;
+    position: relative;
+}
+
+.p404-background {
+    background: url(../img/404.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.p404-content {
+    position: relative;
+    height: 100%;
+}
+
+.p404-content__wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.p404-content__title {
+    font-size: 10rem;
+    line-height: 10rem;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.p404-content__wrapper p {
+    max-width: 40%;
+}
