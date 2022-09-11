@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetOfMe</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+
+    <!-- Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Left siderbar -->
+        <section class="left-sidebar sidebar__even">
+            <div class="top-left border-bottom">
+                <button class="flex justify-center align-center btn-nav cursor-pointer  btn-close__even">
+                    <i class="bx bxs-chevrons-left"></i>
+                </button>
+                <div class="user-info mt-2x">
+                    <div class="image">
+                        <a href="#">
+                            <img src="../../assets/img/Admin/avatar.png" />
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <h2 class="mt-2x">Pro. Charlotte</h2>
+                        <span class="block mt-1x">Design Faculty</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="list-left">
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x active item__even">
+                            <i class="bx bxs-dashboard"></i>
+                            Dashboard
+                        </div>
+                    </li>
+                    <li class="item-left item-open__even">
+                        <div class="flex align-center justify-between text-item-left">
+                            <div class="flex align-center column-gap-1_2x">
+                                <i class="bx bxs-dog"></i>
+                                Breed
+                            </div>
+                            <i class="bx bx-chevron-right icon-right__even"></i>
+                            <i class="bx bx-chevron-down hide icon-down__even" style="display: none;"></i>
+                        </div>
+                        <ul class="list-sub-left list-sub__even hide">
+                            <li class="block">
+                                <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                    All type
+                                </div>
+                            </li>
+                            <li class="block">
+                                <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                    All breed
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                            <i class="bx bxs-face-mask"></i>
+                            Profile
+                        </div>
+                    </li>
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                            <i class="bx bxs-lock"></i>
+                            Page
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="rightsidebar">
+
+        </section>
+
+        <section class="content home home__even">
+            <!-- Header -->
+            <div class="header flex align-center justify-between wrap border-bottom">
+                <div class="left-header flex align-center column-gap-1_2x wrap">
+                    <button class="align-center btn-nav cursor-pointer hide btn-open__even">
+                        <i class="bx bxs-chevrons-right"></i>
+                    </button>
+                    <div class="flex align-center column-gap-1_2x cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#fff" d="M9.71,6.29a1,1,0,0,0-1.42,0l-5,5a1,1,0,0,0,0,1.42l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L5.41,12l4.3-4.29A1,1,0,0,0,9.71,6.29Zm11,5-5-5a1,1,0,0,0-1.42,1.42L18.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5A1,1,0,0,0,20.71,11.29Z" class="color000 svgShape"/></svg>
+                        <h1 class="name-company white-color letter-1 hide-on-mobile-tablet">Heroes Pluss</h1>
+                    </div>
+                    <nav>
+                        <ul class="list-header flex align-center wrap">
+                            <li class="cursor-pointer"><i class="bx bxs-calendar"></i></li>
+                            <li class="cursor-pointer"><i class="bx bx-envelope"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-contact"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-bell"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-flag-alt"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-header flex align-center column-gap-1_2x justify-right">
+                    <div class="search-container flex align-center justify-center cursor-pointer">
+                        <input type="text" name="search" placeholder="Search..." class="search-input">
+                        <a href="#" class="search-btn flex align-center justify-center decoration-none">
+                            <i class="bx bx-search"></i>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="list-header flex align-center">
+                            <li class="cursor-pointer"><i class="bx bx-power-off"></i></li>
+                            <li class="cursor-pointer"><i class="bx bx-dots-vertical-rounded"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Container -->
+            <div class="container pb-2x">
+                <!-- Know Top -->
+                <div class="know-top">
+                    <div class="flex align-center justify-between wrap">
+                        <div class="know-welcome mt-1x">
+                            <h2 class="letter-1">Dog Profile</h2>
+                            <span>Welcome to Heroes Pluss</span>
+                        </div>
+                        <nav class="know-tap mt-1x">
+                            <ul class="flex align-center wrap">
+                                <li>
+                                    <div class="flex align-center column-gap-0_4x">
+                                        <i class="bx bxs-dashboard"></i>
+                                        Heroes Pluss
+                                    </div>
+                                </li>
+                                <li> Breeds</li>
+                                <li> Dogs</li>
+                                <li class="active">
+                                    Profile
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="wrapper mt-1x">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="card card-breed background-profile box-shadow">
+                                <div class="admin-profile">
+                                    <div class="flex flex-column align-center border-bottom pb-2x">
+                                        <h3 class="mt-1x mb-2x white-color letter-1">Akita</h3>
+                                        <div class="admin-profile__image">
+                                            <img class="width-100 height-100 ob-fit-cover radius-50" src="../../assets/img/akita.png" />
+                                        </div>
+                                    </div>
+                                    <div class="admin-info flex flex-column align-center pt-2x pb-2x border-bottom">
+                                        <div class="admin-info__wrap">
+                                            <span class="admin-info__title block mb-1x text-center">Height</span>
+                                            <span class="admin-info__text block text-center white-color">26-28 inches (male)</span>
+                                            <span class="admin-info__text block text-center white-color">24-26 inches (female)</span>
+                                        </div>
+                                        <div class="admin-info__wrap">
+                                            <span class="admin-info__title block mb-1x text-center">Weight</span>
+                                            <span class="admin-info__text block text-center white-color">100-130 pounds (male)</span>
+                                            <span class="admin-info__text block text-center white-color">70-100 pounds (female)</span>
+                                        </div>
+                                        <div class="admin-info__wrap">
+                                            <span class="admin-info__title block mb-1x text-center">Life Expectancy</span>
+                                            <span class="admin-info__text block text-center white-color">10-14 years</span>
+                                        </div>
+                                    </div>
+                                    <div class="admin-info flex flex-column align-center pt-2x">
+                                        <div class="admin-info__wrap">
+                                            <span class="admin-info__title block mb-1x text-center">Roots</span>
+                                            <span class="admin-info__text block text-center white-color">Japan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-breed box-shadow mt-2x">
+                                <div class="card-header flex width-100 align-center">
+                                    <div class="card-header__title flex-grow-1">
+                                        <h3><strong>General </strong> Report</h3>
+                                    </div>
+                                </div>
+                                <ul class="mt-2x">
+                                    <li>
+                                        <div class="admin-report__title">WATCHDOG/PROTECTIVE NATURE</div>
+                                        <div class="admin-progress mb-2x">
+                                            <div class="admin-progress__bar admin-progress__bar--success admin-progress__bar--striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="admin__sr-only">40% Complete (success)</span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="admin-report__title">ADAPTABILITY LEVEL</div>
+                                        <div class="admin-progress mb-2x">
+                                            <div class="admin-progress__bar admin-progress__bar--info admin-progress__bar--striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="admin__sr-only">20% Complete</span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="admin-report__title">ENERGY LEVEL</div>
+                                        <div class="admin-progress mb-2x">
+                                            <div class="admin-progress__bar admin-progress__bar--warning admin-progress__bar--striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="admin__sr-only">60% Complete (warning)</span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="admin-report__title">BARKING LEVEL</div>
+                                        <div class="admin-progress">
+                                            <div class="admin-progress__bar admin-progress__bar--danger admin-progress__bar--striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="admin__sr-only">80% Complete (danger)</span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col l-8 m-12 c-12">
+                            <div class="card card-breed box-shadow">
+                                <div class="card-header flex width-100 align-center">
+                                    <div class="card-header__title flex-grow-1">
+                                        <h3><strong>Progress </strong> Report</h3>
+                                    </div>
+                                </div>
+                                <div class="mt-2x">
+                                    <svg height="342" version="1.1" width="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.328125px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.84765625" y="303" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34765625,303H675" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="233.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">75</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34765625,233.5H675" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="164" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">150</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34765625,164H675" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="94.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">225</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34765625,94.5H675" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84765625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">300</tspan></text><path fill="none" stroke="#e0e0e0" d="M45.34765625,25H675" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="675" y="315.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2017</tspan></text><text x="464.73288520757296" y="315.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2016</tspan></text><text x="255.04027072878648" y="315.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2015</tspan></text><text x="45.34765625" y="315.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2014</tspan></text><path fill="#292929" stroke="none" d="M45.34765625,230.72C97.77080986969662,207.09,202.61711710908986,139.32750000000001,255.04027072878648,136.20000000000002C307.4634243484831,133.07250000000002,412.30973158787634,209.17024623803007,464.73288520757296,205.7C517.2996639056797,202.2202462380301,622.4332213018932,132.725,675,108.4L675,303L45.34765625,303Z" fill-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0;"></path><path fill="none" stroke="#222222" d="M45.34765625,230.72C97.77080986969662,207.09,202.61711710908986,139.32750000000001,255.04027072878648,136.20000000000002C307.4634243484831,133.07250000000002,412.30973158787634,209.17024623803007,464.73288520757296,205.7C517.2996639056797,202.2202462380301,622.4332213018932,132.725,675,108.4" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34765625" cy="230.72" r="3" fill="#222222" stroke="#222222" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="255.04027072878648" cy="136.20000000000002" r="3" fill="#222222" stroke="#222222" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="464.73288520757296" cy="205.7" r="3" fill="#222222" stroke="#222222" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="675" cy="108.4" r="3" fill="#222222" stroke="#222222" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#f5f5f5" stroke="none" d="M45.34765625,113.03333333333333C97.77080986969662,131.79833333333335,202.61711710908986,175.93083333333334,255.04027072878648,188.09333333333333C307.4634243484831,200.25583333333333,412.30973158787634,216.81112631098952,464.73288520757296,210.33333333333334C517.2996639056797,203.8377929776562,622.4332213018932,154.73333333333335,675,136.20000000000002L675,303L45.34765625,303Z" fill-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0;"></path><path fill="none" stroke="#cccccc" d="M45.34765625,113.03333333333333C97.77080986969662,131.79833333333335,202.61711710908986,175.93083333333334,255.04027072878648,188.09333333333333C307.4634243484831,200.25583333333333,412.30973158787634,216.81112631098952,464.73288520757296,210.33333333333334C517.2996639056797,203.8377929776562,622.4332213018932,154.73333333333335,675,136.20000000000002" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34765625" cy="113.03333333333333" r="3" fill="#cccccc" stroke="#cccccc" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="255.04027072878648" cy="188.09333333333333" r="3" fill="#cccccc" stroke="#cccccc" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="464.73288520757296" cy="210.33333333333334" r="3" fill="#cccccc" stroke="#cccccc" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="675" cy="136.20000000000002" r="3" fill="#cccccc" stroke="#cccccc" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#48b5ac" stroke="none" d="M45.34765625,177.9C97.77080986969662,176.74166666666667,202.61711710908986,167.47500000000002,255.04027072878648,173.26666666666668C307.4634243484831,179.05833333333334,412.30973158787634,221.91983584131327,464.73288520757296,224.23333333333335C517.2996639056797,226.55316917464663,622.4332213018932,199.90833333333336,675,191.8L675,303L45.34765625,303Z" fill-opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 0;"></path><path fill="none" stroke="#379c94" d="M45.34765625,177.9C97.77080986969662,176.74166666666667,202.61711710908986,167.47500000000002,255.04027072878648,173.26666666666668C307.4634243484831,179.05833333333334,412.30973158787634,221.91983584131327,464.73288520757296,224.23333333333335C517.2996639056797,226.55316917464663,622.4332213018932,199.90833333333336,675,191.8" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="45.34765625" cy="177.9" r="3" fill="#379c94" stroke="#379c94" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="255.04027072878648" cy="173.26666666666668" r="3" fill="#379c94" stroke="#379c94" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="464.73288520757296" cy="224.23333333333335" r="3" fill="#379c94" stroke="#379c94" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="675" cy="191.8" r="3" fill="#379c94" stroke="#379c94" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg>
+                                </div>
+                            </div>
+
+                            <div class="card mt-2x box-shadow pd-2x">
+                                <p class="paragraph">The Akita is a muscular, double-coated dog of ancient Japanese lineage famous for their dignity, courage, and loyalty. In their native land, they're venerated as family protectors and symbols of good health, happiness, and long life.</p>
+
+                                <p class="paragraph">Akitas are burly, heavy-boned spitz-type dogs of imposing stature. Standing 24 to 28 inches at the shoulder, Akitas have a dense coat that comes in several colors, including white. The head is broad and massive, and is balanced in the rear by a full, curled-over tail. The erect ears and dark, shining eyes contribute to an expression of alertness, a hallmark of the breed. Akitas are quiet, fastidious dogs. Wary of strangers and often intolerant of other animals, Akitas will gladly share their silly, affectionate side with family and friends. They thrive on human companionship. The large, independent-thinking Akita is hardwired for protecting those they love. They must be well socialized from birth with people and other dogs.</p>
+                                </p>
+                            </div>
+
+                            <div class="card card-breed box-shadow mt-2x">
+                                <div class="admin-timeline">
+                                    <div class="pt-2x">
+                                        <div class="flex column-gap-2x">
+                                            <div class="admin-timeline__dot importance-1"></div>
+                                            <div class="admin-timeline__mission">
+                                                <span>Just now</span>
+                                                <p>Discharge</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-2x">
+                                        <div class="flex column-gap-2x">
+                                            <div class="admin-timeline__dot importance-2"></div>
+                                            <div class="admin-timeline__mission">
+                                                <span>11:30</span>
+                                                <p>Routine Checkup</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-2x">
+                                        <div class="flex column-gap-2x">
+                                            <div class="admin-timeline__dot importance-1"></div>
+                                            <div class="admin-timeline__mission">
+                                                <span>10:30</span>
+                                                <p>Operation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-2x">
+                                        <div class="flex column-gap-2x">
+                                            <div class="admin-timeline__dot importance-2"></div>
+                                            <div class="admin-timeline__mission">
+                                                <span>3 days ago</span>
+                                                <p>Routine Checkup</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-2x">
+                                        <div class="flex column-gap-2x">
+                                            <div class="admin-timeline__dot importance-1"></div>
+                                            <div class="admin-timeline__mission">
+                                                <span>Thu, 10 Mar</span>
+                                                <p>Routine Checkup</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-2x">
+                                        <div class="flex column-gap-2x">
+                                            <div class="admin-timeline__dot importance-3"></div>
+                                            <div class="admin-timeline__mission">
+                                                <span>Sat, 5 Mar</span>
+                                                <p>Routine Checkup</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="pt-2x">
+                                        <div class="flex column-gap-2x">
+                                            <div class="admin-timeline__dot importance-3"></div>
+                                            <div class="admin-timeline__mission">
+                                                <span>Sun, 11 Feb</span>
+                                                <p>Blood checkup test</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/admin.js" type="application/javascript"></script>
+
+    <script type="application/javascript">
+        listLeftSideBar()
+        navigationEven()
+    </script>
+</body>
+</html>

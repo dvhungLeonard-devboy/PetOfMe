@@ -1,0 +1,778 @@
+/* Left sidebar css */
+.left-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    padding: 0 4px;
+    transition: 0.8s;
+}
+
+.top-left, .list-left {
+    padding: 8px 0;
+}
+
+.btn-nav {
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    font-size: 2.4rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.user-info .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info .image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0px 5px 5px 0px rgb(44 44 44 / 20%);
+}
+
+.user-info .detail h2 {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+.user-info .detail span {
+    font-size: 1.3rem;
+    color: var(--gray-color);
+    letter-spacing: 1px;
+}
+
+.list-left .item-left {
+    cursor: pointer;
+    user-select: none;
+}
+
+.list-left .text-item-left {
+    font-size: 1.7rem;
+    padding: 16px 8px;
+    font-weight: 400;
+    color: var(--text-color);
+    transition: 0.2s;
+}
+
+.list-left .text-item-left:hover {
+    color: var(--primary-color);
+}
+
+.list-left .text-item-left.active {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.list-sub-left  li {
+    animation: fadeIn linear 0.3s;
+    padding: 0 0 0 6px;
+}
+
+/* Content css */
+.content.home {
+    background: var(--background-color);
+    margin: 0 0 0 250px;
+    transition: 0.8s;
+}
+
+.header {
+    min-height: 60px;
+    background: var(--primary-color-admin);
+    padding: 4px 12px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
+    overflow: hidden;
+}
+
+.left-header, .right-header {
+    height: inherit;
+}
+
+.left-header, .right-header {
+    flex-grow: 1;
+}
+
+.name-company {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    user-select: none;
+}
+
+.list-header li {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--white-color);
+    padding: 8px 16px;
+}
+
+.search-container{
+    background: #fff;
+    height: 40px;
+    border-radius: 20px;
+    padding: 12px 14px;
+    transition: 0.8s;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+    font-size: 1.4rem;
+}
+
+.search-container:hover > .search-input{
+    width: 200px;
+    max-width: 100%;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    padding: 0;
+    transition: 0.8s;
+}
+
+.search-container .search-btn i{
+    color: var(--primary-color-admin);
+}
+
+/* Container css */
+.container {
+    position: relative;
+    background: var(--background-color);
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background: var(--primary-color-admin);
+}
+
+/* Know top css */
+.know-top, .wrapper {
+    padding: 8px 34px 8px 18px;
+    position: relative;
+}
+
+.know-welcome h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color:  var(--white-color);
+}
+
+.know-welcome span {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    color:  var(--white-color);
+}
+
+.know-tap {
+    padding: 16px 20px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.3);
+}
+
+.know-tap li {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.know-tap li + li::before {
+    content: "/";
+    margin-left: 4px;
+}
+
+.know-tap li.active {
+    color: var(--menu-color);
+    cursor: default;
+}
+
+.admin-box-1 {
+    background: var(--white-color);
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.admin-box-1 .icon-box {
+    font-size: 1.6rem;
+    padding: 12px;
+    background: var(--background-color);
+    border-radius: 4px;
+}
+
+.admin-box-1 .detail-box h3 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+.admin-box-1 .detail-box span {
+    display: block;
+    font-size: 1.5rem;
+}
+
+/* Card css */
+.card {
+    padding: 20px;
+    background: var(--white-color);
+    overflow-x: auto;
+    border-radius: 4px;
+}
+
+.card-header .card-header__title {
+    color: var(--text-color);
+}
+
+.card-header .card-header__title h3 {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.card-header .card-header__title h3::before {
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background: var(--primary-color-admin);
+    left: -20px;
+    top: 0;
+    content: "";
+}
+
+.card-header .card-header__title h3 strong {
+    color: var(--primary-color-admin);
+}
+
+.card-header .card-header__title span {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+/* Table css */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: transparent;
+}
+
+.table thead tr th {
+    padding: 16px 12px;
+    white-space: nowrap;
+    border-width: 1px 0;
+    border-style: solid;
+    font-size: 1.6rem;
+    border-color: var(--border-color);
+    text-align: left;
+}
+
+.table tbody tr td {
+    padding: 16px 12px;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-top: 1px solid var(--border-color);
+}
+
+.table .badge {
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    border: 1px solid;
+    border-radius: 2px;
+}
+
+.badge.badge-primary {
+    border-color: var(--flag-color-primary);
+}
+
+.badge.badge-warning {
+    border-color: var(--flag-color-warning);
+}
+
+.badge.badge-info {
+    border-color: var(--flag-color-info);
+}
+
+.badge.badge-default {
+    border-color: var(--flag-color-default);
+}
+
+.badge.badge-success {
+    border-color: var(--flag-color-success);
+}
+
+/* Location css */
+.admin-location {
+    gap: 10px;
+}
+
+.admin-box-2 {
+    padding-top: 16px;
+    width: 30%;
+    text-align: center;
+}
+
+.admin-box-2 i {
+    font-size: 20px;
+}
+
+/* Admin time css */
+.admin-time {
+    background: var(--violet-color-admin-5);
+}
+
+.admin-time__date {
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 400;
+}
+
+.admin-time__day p {
+    margin: 16px 0;
+}
+
+.admin-time__day p.admin-time__day--rank {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.admin-time__day p.admin-time__day--date {
+    font-size: 14px;
+}
+
+/* Admin time line css */
+.admin-timeline {
+    padding-left: 20px;
+    position: relative;
+}
+
+.admin-timeline::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: var(--gray-color);
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.admin-timeline__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--white-color);
+    border: 2px solid;
+    z-index: 1;
+}
+
+.admin-timeline__dot.importance-1 {
+    border-color:  var(--flag-color-primary);
+}
+
+.admin-timeline__dot.importance-2 {
+    border-color:  var(--flag-color-info);
+}
+
+.admin-timeline__dot.importance-3 {
+    border-color:  var(--flag-color-success);
+}
+
+.admin-timeline__time {
+    color: var(--gray-color);
+    margin: 0 30px 0 12px;
+    min-width: 40px;
+}
+
+.admin-timeline__mission p {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.admin-timeline__mission span {
+    display: block;
+    font-size: 10px;
+    color: var(--gray-color);
+}
+
+/* All type page css */
+/* Card header add css */
+.card-header__add button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+}
+
+
+/* Table css */
+.table tbody tr td.width-limmit-item-table {
+    max-width: 90px;
+}
+
+.table tbody tr td.width-limmit-item-table div {
+    max-width: 120px;
+}
+
+.table tbody tr td.description-item-table {
+    max-width: 200px;
+    white-space: unset;
+    line-height: 20px;
+}
+
+.table tbody tr td button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+}
+
+/* Add type page css */
+.admin__form-control {
+    padding: 6px 18px 6px 18px;
+    background-color: transparent;
+    border-radius: 30px;
+    outline: none;
+    color: var(--text-color);
+    line-height: normal;
+    font-size: 14px;
+    height: 40px;
+    width: 100%;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.admin__form-control:focus {
+    border: 1px solid var(--primary-color-admin);
+}
+
+textarea.admin__form-control {
+    resize: none;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0;
+    height: auto;
+    line-height: 2;
+}
+.card .card-header span
+textarea.admin__form-control:focus {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.ck-editor__editable[role="textbox"] {
+    min-height: 200px;
+    max-height: 500px;
+    font-size: 13px;
+}
+
+.admin-dropzone {
+    border: 2px solid transparent;
+    background: var(--image-drop-color-admin);
+    min-height: 150px;
+    padding: 20px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.admin__dz-message {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.admin__dz-message .admin__material-icons {
+    font-size: 80px;
+    color: var(--flag-color-default);
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+
+.admin__dz-message h3 {
+    font-size: 28px;
+    line-height: 28px;
+    color: var(--text-color);
+}
+
+.admin__dz-message em {
+    font-size: 14px;
+    color: var(--flag-color-default);
+}
+
+/* Modal delete css */
+.admin-message {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.admin-options button {
+    background: white;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 8px 36px;
+    border: 3px solid var(--black-color);
+    box-shadow: 0 0 0 var(--black-color);;
+    transition: all 0.3s;
+}
+
+.admin-options button:hover {
+    box-shadow: 4px 4px 0 var(--black-color);;
+    transform: translate(-4px, -4px);
+}
+
+.admin-options button:active {
+    box-shadow: 0 0 0 var(--black-color);;
+    transform: translate(0, 0);
+}
+
+/* Profile css */
+.admin-profile h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.admin-profile__image {
+    width: 150px;
+    height: 150px;
+}
+
+.admin-profile__image img {
+    border: 3px solid var(--white-color);
+}
+
+.admin-info__wrap {
+    margin-bottom: 10px;
+}
+
+.admin-info__wrap:last-child {
+    margin-bottom: unset;
+}
+
+.admin-info .admin-info__title {
+    color: var(--gray-color);
+    font-size: 12px;
+}
+
+.admin-info .admin-info__text {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Admin process css */
+.admin-progress {
+    border-radius: 8px;
+    height: 8px;
+    display: flex;
+    overflow: hidden;
+    font-size: 12px;
+    background-color: #e9ecef;
+}
+
+.admin-progress__bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s ease;
+    line-height: 8px;
+    background-color: #1f91f3;
+}
+
+.admin-progress__bar--striped {
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+}
+
+.admin-progress .admin-progress__bar--success {
+    background-color: #2b982b;
+}
+
+.admin-progress .admin-progress__bar--info {
+    background-color: #00b0e4;
+}
+
+.admin-progress .admin-progress__bar--warning {
+    background-color: #ff9600;
+}
+
+.admin-progress .admin-progress__bar--danger {
+    background-color: #fb483a;
+}
+
+.admin__sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* admin report css */
+.admin-report__title {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 4px;
+}
+
+/* admin filter list css */
+.card-filter {
+    width: 200px;
+    position: relative;
+}
+
+.card-filter__selected {
+    height: 40px;
+    background: var(--white-color);
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+.card-filter__selected i {
+    font-size: 25px;
+    line-height: 25px;
+    transition: 0.3s;
+}
+
+.card-filter.active .card-filter__selected i {
+    transform: rotate(-180deg);
+}
+
+.card-filter__options {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--white-color);
+    z-index: 1;
+    animation: growth linear 0.3s;
+}
+
+.card-filter.active .card-filter__options {
+    display: block;
+}
+
+.card-filter__option {
+    height: 40px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    background: var(--white-color);
+}
+
+.card-filter__option:hover {
+    background: #f2f2f2;
+}
+
+.card-filter__option i {
+    font-size: 25px;
+    line-height: 25px;
+    margin-right: 12px;
+}
+
+.card-filter__option--text {
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--text-color);
+}
+
+/* admin pagination list css */
+@import url('https://rsms.me/inter/inter-ui.css');
+.card-pagination {
+    position: relative;
+}
+
+.card-pagination button {
+    outline: none;
+    border: solid 1px #d7d7d7;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 9px 16px;
+    background: var(--white-color);
+}
+
+.card-pagination__index {
+    user-select: none;
+    font-size: 18px;
+    line-height: 18px;
+    width: 20px;
+    counter-increment: pagination;
+    cursor: pointer;
+}
+
+.card-pagination__index a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.card-pagination svg {
+    position: absolute;
+    left: 119px;
+    top: 17px;
+    transition: transform 500ms;
+    width: 44px;
+}
+
+.card-pagination path {
+    fill: none;
+    stroke: var(--primary-color-admin);
+    stroke-dasharray: 150 150;
+    stroke-width: 8;
+}
+
+.card-pagination.open:not(.flip) path {
+  animation: OpenRight 500ms;
+}
+
+.card-pagination.open.flip path {
+  animation: OpenLeft 500ms;
+}
+
+@keyframes OpenRight {
+  25% { stroke-dasharray: 100 150; }
+  60% { stroke-dasharray: 100 150; }
+  100% { stroke-dasharray: 150 150; }
+}
+
+@keyframes OpenLeft {
+  25% { stroke-dashoffset: -50px; }
+  60% { stroke-dashoffset: -50px; }
+  100% { stroke-dashoffset: 0; }
+}
