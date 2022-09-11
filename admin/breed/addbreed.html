@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetOfMe</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+
+    <!-- Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Left siderbar -->
+        <section class="left-sidebar sidebar__even">
+            <div class="top-left border-bottom">
+                <button class="flex justify-center align-center btn-nav cursor-pointer  btn-close__even">
+                    <i class="bx bxs-chevrons-left"></i>
+                </button>
+                <div class="user-info mt-2x">
+                    <div class="image">
+                        <a href="#">
+                            <img src="../../assets/img/Admin/avatar.png" />
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <h2 class="mt-2x">Pro. Charlotte</h2>
+                        <span class="block mt-1x">Design Faculty</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="list-left">
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x active item__even">
+                            <i class="bx bxs-dashboard"></i>
+                            Dashboard
+                        </div>
+                    </li>
+                    <li class="item-left item-open__even">
+                        <div class="flex align-center justify-between text-item-left">
+                            <div class="flex align-center column-gap-1_2x">
+                                <i class="bx bxs-dog"></i>
+                                Breed
+                            </div>
+                            <i class="bx bx-chevron-right icon-right__even"></i>
+                            <i class="bx bx-chevron-down hide icon-down__even" style="display: none;"></i>
+                        </div>
+                        <ul class="list-sub-left list-sub__even hide">
+                            <li class="block">
+                                <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                    All type
+                                </div>
+                            </li>
+                            <li class="block">
+                                <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                    All breed
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                            <i class="bx bxs-face-mask"></i>
+                            Profile
+                        </div>
+                    </li>
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                            <i class="bx bxs-lock"></i>
+                            Page
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="rightsidebar">
+
+        </section>
+
+        <section class="content home home__even">
+            <!-- Header -->
+            <div class="header flex align-center justify-between wrap border-bottom">
+                <div class="left-header flex align-center column-gap-1_2x wrap">
+                    <button class="align-center btn-nav cursor-pointer hide btn-open__even">
+                        <i class="bx bxs-chevrons-right"></i>
+                    </button>
+                    <div class="flex align-center column-gap-1_2x cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#fff" d="M9.71,6.29a1,1,0,0,0-1.42,0l-5,5a1,1,0,0,0,0,1.42l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L5.41,12l4.3-4.29A1,1,0,0,0,9.71,6.29Zm11,5-5-5a1,1,0,0,0-1.42,1.42L18.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5A1,1,0,0,0,20.71,11.29Z" class="color000 svgShape"/></svg>
+                        <h1 class="name-company white-color letter-1 hide-on-mobile-tablet">Heroes Pluss</h1>
+                    </div>
+                    <nav>
+                        <ul class="list-header flex align-center wrap">
+                            <li class="cursor-pointer"><i class="bx bxs-calendar"></i></li>
+                            <li class="cursor-pointer"><i class="bx bx-envelope"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-contact"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-bell"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-flag-alt"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-header flex align-center column-gap-1_2x justify-right">
+                    <div class="search-container flex align-center justify-center cursor-pointer">
+                        <input type="text" name="search" placeholder="Search..." class="search-input">
+                        <a href="#" class="search-btn flex align-center justify-center decoration-none">
+                            <i class="bx bx-search"></i>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="list-header flex align-center">
+                            <li class="cursor-pointer"><i class="bx bx-power-off"></i></li>
+                            <li class="cursor-pointer"><i class="bx bx-dots-vertical-rounded"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Container -->
+            <div class="container pb-2x">
+                <!-- Know Top -->
+                <div class="know-top">
+                    <div class="flex align-center justify-between wrap">
+                        <div class="know-welcome mt-1x">
+                            <h2 class="letter-1">Add new type</h2>
+                            <span>Welcome to Heroes Pluss</span>
+                        </div>
+                        <nav class="know-tap mt-1x">
+                            <ul class="flex align-center wrap">
+                                <li>
+                                    <div class="flex align-center column-gap-0_4x">
+                                        <i class="bx bxs-dashboard"></i>
+                                        Heroes Pluss
+                                    </div>
+                                </li>
+                                <li> Breeds</li>
+                                <li class="active">
+                                    Add type
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="wrapper mt-1x">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="card card-breed box-shadow">
+                                <div class="card-header flex width-100 align-center">
+                                    <div class="card-header__title flex-grow-1">
+                                        <h3><strong>Basic</strong> Infomation</h3>
+                                        <span class="block mt-1x">Description text here...</span>
+                                    </div>
+                                    <div class="card-header__add">
+                                        <button class="cursor-pointer">
+                                            <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" style="enable-background:new 0 0 55 55;" xml:space="preserve">
+                                                <g>
+                                                    <path d="M49,8.5v-8H0v47h7v7h48v-46H49z M2,45.5v-43h45v6H7v37H2z M53,52.5H9v-5v-37h40h4V52.5z"/>
+                                                    <path d="M39.485,23.015c-0.391-0.391-1.023-0.391-1.414,0L31,30.086l-7.071-7.071c-0.391-0.391-1.023-0.391-1.414,0
+                                                        s-0.391,1.023,0,1.414l7.071,7.071l-7.071,7.071c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293
+                                                        s0.512-0.098,0.707-0.293L31,32.914l7.071,7.071c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293
+                                                        c0.391-0.391,0.391-1.023,0-1.414L32.414,31.5l7.071-7.071C39.876,24.038,39.876,23.405,39.485,23.015z"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row">
+                                        <div class="col l-6 m-12 c-12 mt-2x">
+                                            <input type="text" class="admin__form-control border" placeholder="Name">
+                                        </div>
+                                        <div class="col l-6 m-12 c-12 mt-2x">
+                                            <input type="text" class="admin__form-control border" placeholder="Department">
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 mt-2x">
+                                            <div id="breed-description"></div>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 mt-2x">
+                                            <form action="/" id="frmFileUpload" class="admin-dropzone" method="post" enctype="multipart/form-data">
+                                                <div class="admin__dz-message">
+                                                    <div>
+                                                        <i class="admin__material-icons">touch_app</i>
+                                                    </div>
+                                                    <h3 class="mb-2x mt-1x letter-1">Drop files here or click to upload.</h3>
+                                                    <em>(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</em>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col l-12 m-12 c-12 mt-2x">
+                                            <div class="flex align-center column-gap-2x">
+                                                <button class="btn btn--primary__admin btn--radius">Add</button>
+                                                <button class="btn btn--secondary__admin btn--radius">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CKEditor cdn -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/classic/ckeditor.js"></script>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/admin.js" type="application/javascript"></script>
+
+    <script type="application/javascript">
+        listLeftSideBar()
+        navigationEven()
+        ckeditor()
+    </script>
+</body>
+</html>

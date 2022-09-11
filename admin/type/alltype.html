@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetOfMe</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+
+    <!-- Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Left siderbar -->
+        <section class="left-sidebar sidebar__even">
+            <div class="top-left border-bottom">
+                <button class="flex justify-center align-center btn-nav cursor-pointer  btn-close__even">
+                    <i class="bx bxs-chevrons-left"></i>
+                </button>
+                <div class="user-info mt-2x">
+                    <div class="image">
+                        <a href="#">
+                            <img src="../../assets/img/Admin/avatar.png" />
+                        </a>
+                    </div>
+                    <div class="detail">
+                        <h2 class="mt-2x">Pro. Charlotte</h2>
+                        <span class="block mt-1x">Design Faculty</span>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="list-left">
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x active item__even">
+                            <i class="bx bxs-dashboard"></i>
+                            Dashboard
+                        </div>
+                    </li>
+                    <li class="item-left item-open__even">
+                        <div class="flex align-center justify-between text-item-left">
+                            <div class="flex align-center column-gap-1_2x">
+                                <i class="bx bxs-dog"></i>
+                                Breed
+                            </div>
+                            <i class="bx bx-chevron-right icon-right__even"></i>
+                            <i class="bx bx-chevron-down hide icon-down__even" style="display: none;"></i>
+                        </div>
+                        <ul class="list-sub-left list-sub__even hide">
+                            <li class="block">
+                                <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                    All type
+                                </div>
+                            </li>
+                            <li class="block">
+                                <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                    All breed
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                            <i class="bx bxs-face-mask"></i>
+                            Profile
+                        </div>
+                    </li>
+                    <li class="item-left block">
+                        <div class="flex align-center text-item-left column-gap-1_2x item__even">
+                            <i class="bx bxs-lock"></i>
+                            Page
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="rightsidebar">
+
+        </section>
+
+        <section class="content home home__even">
+            <!-- Header -->
+            <div class="header flex align-center justify-between wrap border-bottom">
+                <div class="left-header flex align-center column-gap-1_2x wrap">
+                    <button class="align-center btn-nav cursor-pointer hide btn-open__even">
+                        <i class="bx bxs-chevrons-right"></i>
+                    </button>
+                    <div class="flex align-center column-gap-1_2x cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#fff" d="M9.71,6.29a1,1,0,0,0-1.42,0l-5,5a1,1,0,0,0,0,1.42l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L5.41,12l4.3-4.29A1,1,0,0,0,9.71,6.29Zm11,5-5-5a1,1,0,0,0-1.42,1.42L18.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5A1,1,0,0,0,20.71,11.29Z" class="color000 svgShape"/></svg>
+                        <h1 class="name-company white-color letter-1 hide-on-mobile-tablet">Heroes Pluss</h1>
+                    </div>
+                    <nav>
+                        <ul class="list-header flex align-center wrap">
+                            <li class="cursor-pointer"><i class="bx bxs-calendar"></i></li>
+                            <li class="cursor-pointer"><i class="bx bx-envelope"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-contact"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-bell"></i></li>
+                            <li class="cursor-pointer"><i class="bx bxs-flag-alt"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right-header flex align-center column-gap-1_2x justify-right">
+                    <div class="search-container flex align-center justify-center cursor-pointer">
+                        <input type="text" name="search" placeholder="Search..." class="search-input">
+                        <a href="#" class="search-btn flex align-center justify-center decoration-none">
+                            <i class="bx bx-search"></i>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="list-header flex align-center">
+                            <li class="cursor-pointer"><i class="bx bx-power-off"></i></li>
+                            <li class="cursor-pointer"><i class="bx bx-dots-vertical-rounded"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Container -->
+            <div class="container pb-2x">
+                <!-- Know Top -->
+                <div class="know-top">
+                    <div class="flex align-center justify-between wrap">
+                        <div class="know-welcome mt-1x">
+                            <h2 class="letter-1">All type breed</h2>
+                            <span>Welcome to Heroes Pluss</span>
+                        </div>
+                        <nav class="know-tap mt-1x">
+                            <ul class="flex align-center wrap">
+                                <li>
+                                    <div class="flex align-center column-gap-0_4x">
+                                        <i class="bx bxs-dashboard"></i>
+                                        Heroes Pluss
+                                    </div>
+                                </li>
+                                <li> Breeds</li>
+                                <li class="active">
+                                    All type
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="wrapper mt-1x">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <!-- Table -->
+                            <div class="card card-breed box-shadow">
+                                <div class="card-header flex width-100 align-center">
+                                    <div class="card-header__title flex-grow-1">
+                                        <h3><strong>New</strong> Admission List</h3>
+                                        <span class="block mt-1x">Description text here...</span>
+                                    </div>
+                                    <div class="card-header__add">
+                                        <button class="cursor-pointer">
+                                            <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 489.8 489.8" style="enable-background:new 0 0 489.8 489.8;" xml:space="preserve">
+                                                <g>
+                                                    <g>
+                                                        <path d="M438.2,0H51.6C23.1,0,0,23.2,0,51.6v386.6c0,28.5,23.2,51.6,51.6,51.6h386.6c28.5,0,51.6-23.2,51.6-51.6V51.6
+                                                            C489.8,23.2,466.6,0,438.2,0z M465.3,438.2c0,14.9-12.2,27.1-27.1,27.1H51.6c-14.9,0-27.1-12.2-27.1-27.1V51.6
+                                                            c0-14.9,12.2-27.1,27.1-27.1h386.6c14.9,0,27.1,12.2,27.1,27.1V438.2z"/>
+                                                        <path d="M337.4,232.7h-80.3v-80.3c0-6.8-5.5-12.3-12.3-12.3s-12.3,5.5-12.3,12.3v80.3h-80.3c-6.8,0-12.3,5.5-12.3,12.2
+                                                            c0,6.8,5.5,12.3,12.3,12.3h80.3v80.3c0,6.8,5.5,12.3,12.3,12.3s12.3-5.5,12.3-12.3v-80.3h80.3c6.8,0,12.3-5.5,12.3-12.3
+                                                            C349.7,238.1,344.2,232.7,337.4,232.7z"/>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body mt-2x">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Description</th>
+                                                <th>Amount</th>
+                                                <th>Department</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="width-limmit-item-table"><div class="box-shadow"><img class="width-100" src="../../assets/img/alaskan.png" /></div></td>
+                                                <td><span class="id-item-table">OU 00456</span></td>
+                                                <td>Dogs</td>
+                                                <td class="description-item-table">This is breed affinity</td>
+                                                <td>40</td>
+                                                <td><span class="badge badge-primary">ANIMAl</span></td>
+                                                <td class=""><div class="flex align-center">
+                                                    <button class="cursor-pointer">
+                                                        <svg width="28px" height="28px" viewBox="0 -16 544 544" xmlns="http://www.w3.org/2000/svg" ><title>show</title><path d="M272 400Q205 400 151 361 96 322 64 256 96 190 151 151 205 112 272 112 336 112 392 153 448 193 480 256 448 319 392 360 336 400 272 400ZM272 352Q312 352 340 324 368 296 368 256 368 216 340 188 312 160 272 160 232 160 204 188 176 216 176 256 176 296 204 324 232 352 272 352ZM272 312Q249 312 233 296 216 279 216 256 216 233 233 217 249 200 272 200 295 200 312 217 328 233 328 256 328 279 312 296 295 312 272 312Z" /></svg>
+                                                    </button>
+                                                    <button class="cursor-pointer">
+                                                        <svg width="24px" height="24px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.25 55.25" style="enable-background:new 0 0 55.25 55.25;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M0.523,51.933l-0.497,2.085c-0.016,0.067-0.02,0.135-0.022,0.202C0.004,54.234,0,54.246,0,54.259
+                                                                    c0.001,0.114,0.026,0.225,0.065,0.332c0.009,0.025,0.019,0.047,0.03,0.071c0.049,0.107,0.11,0.21,0.196,0.296
+                                                                    c0.095,0.095,0.207,0.168,0.328,0.218c0.121,0.05,0.25,0.075,0.379,0.075c0.077,0,0.155-0.009,0.231-0.027l2.086-0.497
+                                                                    L0.523,51.933z"/>
+                                                                <path d="M52.618,2.631c-3.51-3.508-9.219-3.508-12.729,0L3.827,38.693C3.81,38.71,3.8,38.731,3.785,38.749
+                                                                    c-0.021,0.024-0.039,0.05-0.058,0.076c-0.053,0.074-0.094,0.153-0.125,0.239c-0.009,0.026-0.022,0.049-0.029,0.075
+                                                                    c-0.003,0.01-0.009,0.02-0.012,0.03l-2.495,10.48L5.6,54.182l10.48-2.495c0.027-0.006,0.051-0.021,0.077-0.03
+                                                                    c0.034-0.011,0.066-0.024,0.099-0.039c0.072-0.033,0.139-0.074,0.201-0.123c0.024-0.019,0.049-0.033,0.072-0.054
+                                                                    c0.008-0.008,0.018-0.012,0.026-0.02l36.063-36.063C56.127,11.85,56.127,6.14,52.618,2.631z M17.157,47.992l0.354-3.183
+                                                                    L39.889,22.43c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L16.097,43.395l-4.773,0.53l0.53-4.773l22.38-22.378
+                                                                    c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0L10.44,37.738l-3.183,0.354L34.94,10.409l9.9,9.9L17.157,47.992z
+                                                                    M46.254,18.895l-9.9-9.9l1.414-1.414l9.9,9.9L46.254,18.895z M49.082,16.067l-9.9-9.9l1.415-1.415l9.9,9.9L49.082,16.067z"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="cursor-pointer open-modal__even">
+                                                        <svg width="24px" height="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473 473" style="enable-background:new 0 0 473 473;" xml:space="preserve">
+                                                            <g>
+                                                                <path d="M324.285,215.015V128h20V38h-98.384V0H132.669v38H34.285v90h20v305h161.523c23.578,24.635,56.766,40,93.477,40
+                                                                    c71.368,0,129.43-58.062,129.43-129.43C438.715,277.276,388.612,222.474,324.285,215.015z M294.285,215.015
+                                                                    c-18.052,2.093-34.982,7.911-50,16.669V128h50V215.015z M162.669,30h53.232v8h-53.232V30z M64.285,68h250v30h-250V68z M84.285,128
+                                                                    h50v275h-50V128z M164.285,403V128h50v127.768c-21.356,23.089-34.429,53.946-34.429,87.802c0,21.411,5.231,41.622,14.475,59.43
+                                                                    H164.285z M309.285,443c-54.826,0-99.429-44.604-99.429-99.43s44.604-99.429,99.429-99.429s99.43,44.604,99.43,99.429
+                                                                    S364.111,443,309.285,443z"/>
+                                                                <polygon points="342.248,289.395 309.285,322.358 276.323,289.395 255.11,310.608 288.073,343.571 255.11,376.533 276.323,397.746
+                                                                    309.285,364.783 342.248,397.746 363.461,376.533 330.498,343.571 363.461,310.608 	"/>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                </div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal delete -->
+        <div class="admin-modal flex justify-center align-center modal__even">
+            <div class="admin-modal__container align-center flex pt-2x pb-2x">
+                <p class="admin-message mt-none mb-2x">Are you sure you want to delete this element?</p>
+                <div class="admin-options flex justify-between column-gap-4x">
+                    <button>Yes</button>
+                    <button class="close-modal__even">No</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Main JS -->
+    <script src="../../assets/js/admin.js" type="application/javascript"></script>
+
+    <script type="application/javascript">
+        listLeftSideBar()
+        navigationEven()
+        openModal()
+    </script>
+</body>
+</html>
